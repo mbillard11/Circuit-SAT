@@ -1,0 +1,1008 @@
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 0, 'output': 'z0', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 1, 'output': 'z1', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 2, 'output': 'z2', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 3, 'output': 'z3', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 4, 'output': 'z4', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 5, 'output': 'z5', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 6, 'output': 'z6', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 7, 'output': 'z7', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 8, 'output': 'z8', 'type': 'INPUT'}
+{'inputs': None, 'layer': 0, 'fanin': 1, 'num': 9, 'output': 'z9', 'type': 'INPUT'}
+{'inputs': ['z4', 'z8'], 'layer': 1, 'fanin': 2, 'num': 0, 'output': 'z10', 'type': 'AND'}
+{'inputs': ['z4'], 'layer': 1, 'fanin': 1, 'num': 1, 'output': 'z11', 'type': 'NOT'}
+{'inputs': ['z10'], 'layer': 2, 'fanin': 1, 'num': 0, 'output': 'z12', 'type': 'NOT'}
+{'inputs': ['z11', 'z10'], 'layer': 2, 'fanin': 2, 'num': 1, 'output': 'z13', 'type': 'OR'}
+{'inputs': ['z12', 'z13'], 'layer': 3, 'fanin': 2, 'num': 0, 'output': 'z14', 'type': 'AND'}
+{'inputs': ['z13'], 'layer': 3, 'fanin': 1, 'num': 1, 'output': 'z15', 'type': 'NOT'}
+{'inputs': ['z14', 'z15'], 'layer': 4, 'fanin': 2, 'num': 0, 'output': 'z16', 'type': 'AND'}
+{'inputs': ['z15', 'z14'], 'layer': 4, 'fanin': 2, 'num': 1, 'output': 'z17', 'type': 'OR'}
+{'inputs': ['z17'], 'layer': 5, 'fanin': 1, 'num': 0, 'output': 'z18', 'type': 'NOT'}
+{'inputs': ['z17', 'z16'], 'layer': 5, 'fanin': 2, 'num': 1, 'output': 'z19', 'type': 'OR'}
+{'inputs': ['z19'], 'layer': 6, 'fanin': 1, 'num': 0, 'output': 'z20', 'type': 'NOT'}
+{'inputs': ['z19'], 'layer': 6, 'fanin': 1, 'num': 1, 'output': 'z21', 'type': 'NOT'}
+{'inputs': ['z20', 'z21'], 'layer': 7, 'fanin': 2, 'num': 0, 'output': 'z22', 'type': 'AND'}
+{'inputs': ['z20'], 'layer': 7, 'fanin': 1, 'num': 1, 'output': 'z23', 'type': 'NOT'}
+{'inputs': ['z23', 'z22'], 'layer': 8, 'fanin': 2, 'num': 0, 'output': 'z24', 'type': 'AND'}
+{'inputs': ['z22', 'z23'], 'layer': 8, 'fanin': 2, 'num': 1, 'output': 'z25', 'type': 'AND'}
+{'inputs': ['z24'], 'layer': 9, 'fanin': 1, 'num': 0, 'output': 'z26', 'type': 'NOT'}
+{'inputs': ['z24', 'z25'], 'layer': 9, 'fanin': 2, 'num': 1, 'output': 'z27', 'type': 'AND'}
+{'inputs': ['z26'], 'layer': 10, 'fanin': 1, 'num': 0, 'output': 'z28', 'type': 'NOT'}
+{'inputs': ['z27'], 'layer': 10, 'fanin': 1, 'num': 1, 'output': 'z29', 'type': 'NOT'}
+{'inputs': ['z29'], 'layer': 11, 'fanin': 1, 'num': 0, 'output': 'z30', 'type': 'NOT'}
+{'inputs': ['z28', 'z29'], 'layer': 11, 'fanin': 2, 'num': 1, 'output': 'z31', 'type': 'AND'}
+{'inputs': ['z30', 'z31'], 'layer': 12, 'fanin': 2, 'num': 0, 'output': 'z32', 'type': 'AND'}
+{'inputs': ['z31', 'z30'], 'layer': 12, 'fanin': 2, 'num': 1, 'output': 'z33', 'type': 'OR'}
+{'inputs': ['z32', 'z33'], 'layer': 13, 'fanin': 2, 'num': 0, 'output': 'z34', 'type': 'OR'}
+{'inputs': ['z32', 'z33'], 'layer': 13, 'fanin': 2, 'num': 1, 'output': 'z35', 'type': 'AND'}
+{'inputs': ['z34', 'z35'], 'layer': 14, 'fanin': 2, 'num': 0, 'output': 'z36', 'type': 'AND'}
+{'inputs': ['z34', 'z35'], 'layer': 14, 'fanin': 2, 'num': 1, 'output': 'z37', 'type': 'OR'}
+{'inputs': ['z36', 'z37'], 'layer': 15, 'fanin': 2, 'num': 0, 'output': 'z38', 'type': 'OR'}
+{'inputs': ['z36', 'z37'], 'layer': 15, 'fanin': 2, 'num': 1, 'output': 'z39', 'type': 'OR'}
+{'inputs': ['z39', 'z38'], 'layer': 16, 'fanin': 2, 'num': 0, 'output': 'z40', 'type': 'AND'}
+{'inputs': ['z39'], 'layer': 16, 'fanin': 1, 'num': 1, 'output': 'z41', 'type': 'NOT'}
+{'inputs': ['z40', 'z41'], 'layer': 17, 'fanin': 2, 'num': 0, 'output': 'z42', 'type': 'AND'}
+{'inputs': ['z40', 'z41'], 'layer': 17, 'fanin': 2, 'num': 1, 'output': 'z43', 'type': 'AND'}
+{'inputs': ['z42', 'z43'], 'layer': 18, 'fanin': 2, 'num': 0, 'output': 'z44', 'type': 'AND'}
+{'inputs': ['z42'], 'layer': 18, 'fanin': 1, 'num': 1, 'output': 'z45', 'type': 'NOT'}
+{'inputs': ['z44', 'z45'], 'layer': 19, 'fanin': 2, 'num': 0, 'output': 'z46', 'type': 'OR'}
+{'inputs': ['z45', 'z44'], 'layer': 19, 'fanin': 2, 'num': 1, 'output': 'z47', 'type': 'OR'}
+{'inputs': ['z46', 'z47'], 'layer': 20, 'fanin': 2, 'num': 0, 'output': 'z48', 'type': 'AND'}
+{'inputs': ['z46', 'z47'], 'layer': 20, 'fanin': 2, 'num': 1, 'output': 'z49', 'type': 'OR'}
+{'inputs': ['z49'], 'layer': 21, 'fanin': 1, 'num': 0, 'output': 'z50', 'type': 'NOT'}
+{'inputs': ['z49', 'z48'], 'layer': 21, 'fanin': 2, 'num': 1, 'output': 'z51', 'type': 'OR'}
+{'inputs': ['z50', 'z51'], 'layer': 22, 'fanin': 2, 'num': 0, 'output': 'z52', 'type': 'OR'}
+{'inputs': ['z50', 'z51'], 'layer': 22, 'fanin': 2, 'num': 1, 'output': 'z53', 'type': 'OR'}
+{'inputs': ['z53', 'z52'], 'layer': 23, 'fanin': 2, 'num': 0, 'output': 'z54', 'type': 'AND'}
+{'inputs': ['z52'], 'layer': 23, 'fanin': 1, 'num': 1, 'output': 'z55', 'type': 'NOT'}
+{'inputs': ['z55', 'z54'], 'layer': 24, 'fanin': 2, 'num': 0, 'output': 'z56', 'type': 'AND'}
+{'inputs': ['z55', 'z54'], 'layer': 24, 'fanin': 2, 'num': 1, 'output': 'z57', 'type': 'OR'}
+{'inputs': ['z57'], 'layer': 25, 'fanin': 1, 'num': 0, 'output': 'z58', 'type': 'NOT'}
+{'inputs': ['z57', 'z56'], 'layer': 25, 'fanin': 2, 'num': 1, 'output': 'z59', 'type': 'OR'}
+{'inputs': ['z59', 'z58'], 'layer': 26, 'fanin': 2, 'num': 0, 'output': 'z60', 'type': 'AND'}
+{'inputs': ['z59', 'z58'], 'layer': 26, 'fanin': 2, 'num': 1, 'output': 'z61', 'type': 'AND'}
+{'inputs': ['z61', 'z60'], 'layer': 27, 'fanin': 2, 'num': 0, 'output': 'z62', 'type': 'AND'}
+{'inputs': ['z61', 'z60'], 'layer': 27, 'fanin': 2, 'num': 1, 'output': 'z63', 'type': 'OR'}
+{'inputs': ['z63', 'z62'], 'layer': 28, 'fanin': 2, 'num': 0, 'output': 'z64', 'type': 'OR'}
+{'inputs': ['z63'], 'layer': 28, 'fanin': 1, 'num': 1, 'output': 'z65', 'type': 'NOT'}
+{'inputs': ['z64'], 'layer': 29, 'fanin': 1, 'num': 0, 'output': 'z66', 'type': 'NOT'}
+{'inputs': ['z65'], 'layer': 29, 'fanin': 1, 'num': 1, 'output': 'z67', 'type': 'NOT'}
+{'inputs': ['z66', 'z67'], 'layer': 30, 'fanin': 2, 'num': 0, 'output': 'z68', 'type': 'AND'}
+{'inputs': ['z66', 'z67'], 'layer': 30, 'fanin': 2, 'num': 1, 'output': 'z69', 'type': 'OR'}
+{'inputs': ['z68', 'z69'], 'layer': 31, 'fanin': 2, 'num': 0, 'output': 'z70', 'type': 'OR'}
+{'inputs': ['z69', 'z68'], 'layer': 31, 'fanin': 2, 'num': 1, 'output': 'z71', 'type': 'AND'}
+{'inputs': ['z71'], 'layer': 32, 'fanin': 1, 'num': 0, 'output': 'z72', 'type': 'NOT'}
+{'inputs': ['z70'], 'layer': 32, 'fanin': 1, 'num': 1, 'output': 'z73', 'type': 'NOT'}
+{'inputs': ['z72', 'z73'], 'layer': 33, 'fanin': 2, 'num': 0, 'output': 'z74', 'type': 'AND'}
+{'inputs': ['z73'], 'layer': 33, 'fanin': 1, 'num': 1, 'output': 'z75', 'type': 'NOT'}
+{'inputs': ['z74'], 'layer': 34, 'fanin': 1, 'num': 0, 'output': 'z76', 'type': 'NOT'}
+{'inputs': ['z75', 'z74'], 'layer': 34, 'fanin': 2, 'num': 1, 'output': 'z77', 'type': 'AND'}
+{'inputs': ['z76', 'z77'], 'layer': 35, 'fanin': 2, 'num': 0, 'output': 'z78', 'type': 'OR'}
+{'inputs': ['z76', 'z77'], 'layer': 35, 'fanin': 2, 'num': 1, 'output': 'z79', 'type': 'OR'}
+{'inputs': ['z79', 'z78'], 'layer': 36, 'fanin': 2, 'num': 0, 'output': 'z80', 'type': 'AND'}
+{'inputs': ['z78', 'z79'], 'layer': 36, 'fanin': 2, 'num': 1, 'output': 'z81', 'type': 'AND'}
+{'inputs': ['z81', 'z80'], 'layer': 37, 'fanin': 2, 'num': 0, 'output': 'z82', 'type': 'OR'}
+{'inputs': ['z80'], 'layer': 37, 'fanin': 1, 'num': 1, 'output': 'z83', 'type': 'NOT'}
+{'inputs': ['z82'], 'layer': 38, 'fanin': 1, 'num': 0, 'output': 'z84', 'type': 'NOT'}
+{'inputs': ['z82', 'z83'], 'layer': 38, 'fanin': 2, 'num': 1, 'output': 'z85', 'type': 'AND'}
+{'inputs': ['z85'], 'layer': 39, 'fanin': 1, 'num': 0, 'output': 'z86', 'type': 'NOT'}
+{'inputs': ['z85', 'z84'], 'layer': 39, 'fanin': 2, 'num': 1, 'output': 'z87', 'type': 'OR'}
+{'inputs': ['z86'], 'layer': 40, 'fanin': 1, 'num': 0, 'output': 'z88', 'type': 'NOT'}
+{'inputs': ['z86'], 'layer': 40, 'fanin': 1, 'num': 1, 'output': 'z89', 'type': 'NOT'}
+{'inputs': ['z88'], 'layer': 41, 'fanin': 1, 'num': 0, 'output': 'z90', 'type': 'NOT'}
+{'inputs': ['z89', 'z88'], 'layer': 41, 'fanin': 2, 'num': 1, 'output': 'z91', 'type': 'AND'}
+{'inputs': ['z90', 'z91'], 'layer': 42, 'fanin': 2, 'num': 0, 'output': 'z92', 'type': 'AND'}
+{'inputs': ['z91'], 'layer': 42, 'fanin': 1, 'num': 1, 'output': 'z93', 'type': 'NOT'}
+{'inputs': ['z92', 'z93'], 'layer': 43, 'fanin': 2, 'num': 0, 'output': 'z94', 'type': 'OR'}
+{'inputs': ['z92', 'z93'], 'layer': 43, 'fanin': 2, 'num': 1, 'output': 'z95', 'type': 'AND'}
+{'inputs': ['z95'], 'layer': 44, 'fanin': 1, 'num': 0, 'output': 'z96', 'type': 'NOT'}
+{'inputs': ['z95', 'z94'], 'layer': 44, 'fanin': 2, 'num': 1, 'output': 'z97', 'type': 'AND'}
+{'inputs': ['z97', 'z96'], 'layer': 45, 'fanin': 2, 'num': 0, 'output': 'z98', 'type': 'OR'}
+{'inputs': ['z96'], 'layer': 45, 'fanin': 1, 'num': 1, 'output': 'z99', 'type': 'NOT'}
+{'inputs': ['z98'], 'layer': 46, 'fanin': 1, 'num': 0, 'output': 'z100', 'type': 'NOT'}
+{'inputs': ['z99'], 'layer': 46, 'fanin': 1, 'num': 1, 'output': 'z101', 'type': 'NOT'}
+{'inputs': ['z101', 'z100'], 'layer': 47, 'fanin': 2, 'num': 0, 'output': 'z102', 'type': 'OR'}
+{'inputs': ['z100', 'z101'], 'layer': 47, 'fanin': 2, 'num': 1, 'output': 'z103', 'type': 'OR'}
+{'inputs': ['z102', 'z103'], 'layer': 48, 'fanin': 2, 'num': 0, 'output': 'z104', 'type': 'OR'}
+{'inputs': ['z103'], 'layer': 48, 'fanin': 1, 'num': 1, 'output': 'z105', 'type': 'NOT'}
+{'inputs': ['z104'], 'layer': 49, 'fanin': 1, 'num': 0, 'output': 'z106', 'type': 'NOT'}
+{'inputs': ['z105', 'z104'], 'layer': 49, 'fanin': 2, 'num': 1, 'output': 'z107', 'type': 'OR'}
+{'inputs': ['z106', 'z107'], 'layer': 50, 'fanin': 2, 'num': 0, 'output': 'z108', 'type': 'AND'}
+{'inputs': ['z107'], 'layer': 50, 'fanin': 1, 'num': 1, 'output': 'z109', 'type': 'NOT'}
+{'inputs': ['z108', 'z109'], 'layer': 51, 'fanin': 2, 'num': 0, 'output': 'z110', 'type': 'AND'}
+{'inputs': ['z109', 'z108'], 'layer': 51, 'fanin': 2, 'num': 1, 'output': 'z111', 'type': 'AND'}
+{'inputs': ['z110'], 'layer': 52, 'fanin': 1, 'num': 0, 'output': 'z112', 'type': 'NOT'}
+{'inputs': ['z110', 'z111'], 'layer': 52, 'fanin': 2, 'num': 1, 'output': 'z113', 'type': 'AND'}
+{'inputs': ['z113', 'z112'], 'layer': 53, 'fanin': 2, 'num': 0, 'output': 'z114', 'type': 'OR'}
+{'inputs': ['z112'], 'layer': 53, 'fanin': 1, 'num': 1, 'output': 'z115', 'type': 'NOT'}
+{'inputs': ['z115', 'z114'], 'layer': 54, 'fanin': 2, 'num': 0, 'output': 'z116', 'type': 'AND'}
+{'inputs': ['z115', 'z114'], 'layer': 54, 'fanin': 2, 'num': 1, 'output': 'z117', 'type': 'OR'}
+{'inputs': ['z116', 'z117'], 'layer': 55, 'fanin': 2, 'num': 0, 'output': 'z118', 'type': 'AND'}
+{'inputs': ['z116'], 'layer': 55, 'fanin': 1, 'num': 1, 'output': 'z119', 'type': 'NOT'}
+{'inputs': ['z118'], 'layer': 56, 'fanin': 1, 'num': 0, 'output': 'z120', 'type': 'NOT'}
+{'inputs': ['z118', 'z119'], 'layer': 56, 'fanin': 2, 'num': 1, 'output': 'z121', 'type': 'OR'}
+{'inputs': ['z121', 'z120'], 'layer': 57, 'fanin': 2, 'num': 0, 'output': 'z122', 'type': 'OR'}
+{'inputs': ['z121', 'z120'], 'layer': 57, 'fanin': 2, 'num': 1, 'output': 'z123', 'type': 'OR'}
+{'inputs': ['z123', 'z122'], 'layer': 58, 'fanin': 2, 'num': 0, 'output': 'z124', 'type': 'OR'}
+{'inputs': ['z122', 'z123'], 'layer': 58, 'fanin': 2, 'num': 1, 'output': 'z125', 'type': 'AND'}
+{'inputs': ['z125', 'z124'], 'layer': 59, 'fanin': 2, 'num': 0, 'output': 'z126', 'type': 'AND'}
+{'inputs': ['z124', 'z125'], 'layer': 59, 'fanin': 2, 'num': 1, 'output': 'z127', 'type': 'OR'}
+{'inputs': ['z126', 'z127'], 'layer': 60, 'fanin': 2, 'num': 0, 'output': 'z128', 'type': 'AND'}
+{'inputs': ['z127'], 'layer': 60, 'fanin': 1, 'num': 1, 'output': 'z129', 'type': 'NOT'}
+{'inputs': ['z128', 'z129'], 'layer': 61, 'fanin': 2, 'num': 0, 'output': 'z130', 'type': 'AND'}
+{'inputs': ['z129'], 'layer': 61, 'fanin': 1, 'num': 1, 'output': 'z131', 'type': 'NOT'}
+{'inputs': ['z131', 'z130'], 'layer': 62, 'fanin': 2, 'num': 0, 'output': 'z132', 'type': 'AND'}
+{'inputs': ['z130', 'z131'], 'layer': 62, 'fanin': 2, 'num': 1, 'output': 'z133', 'type': 'AND'}
+{'inputs': ['z133', 'z132'], 'layer': 63, 'fanin': 2, 'num': 0, 'output': 'z134', 'type': 'AND'}
+{'inputs': ['z133', 'z132'], 'layer': 63, 'fanin': 2, 'num': 1, 'output': 'z135', 'type': 'AND'}
+{'inputs': ['z135', 'z134'], 'layer': 64, 'fanin': 2, 'num': 0, 'output': 'z136', 'type': 'OR'}
+{'inputs': ['z134'], 'layer': 64, 'fanin': 1, 'num': 1, 'output': 'z137', 'type': 'NOT'}
+{'inputs': ['z136', 'z137'], 'layer': 65, 'fanin': 2, 'num': 0, 'output': 'z138', 'type': 'AND'}
+{'inputs': ['z137', 'z136'], 'layer': 65, 'fanin': 2, 'num': 1, 'output': 'z139', 'type': 'AND'}
+{'inputs': ['z138', 'z139'], 'layer': 66, 'fanin': 2, 'num': 0, 'output': 'z140', 'type': 'OR'}
+{'inputs': ['z139', 'z138'], 'layer': 66, 'fanin': 2, 'num': 1, 'output': 'z141', 'type': 'AND'}
+{'inputs': ['z141', 'z140'], 'layer': 67, 'fanin': 2, 'num': 0, 'output': 'z142', 'type': 'OR'}
+{'inputs': ['z141', 'z140'], 'layer': 67, 'fanin': 2, 'num': 1, 'output': 'z143', 'type': 'OR'}
+{'inputs': ['z143', 'z142'], 'layer': 68, 'fanin': 2, 'num': 0, 'output': 'z144', 'type': 'OR'}
+{'inputs': ['z143'], 'layer': 68, 'fanin': 1, 'num': 1, 'output': 'z145', 'type': 'NOT'}
+{'inputs': ['z144'], 'layer': 69, 'fanin': 1, 'num': 0, 'output': 'z146', 'type': 'NOT'}
+{'inputs': ['z144', 'z145'], 'layer': 69, 'fanin': 2, 'num': 1, 'output': 'z147', 'type': 'OR'}
+{'inputs': ['z147', 'z146'], 'layer': 70, 'fanin': 2, 'num': 0, 'output': 'z148', 'type': 'AND'}
+{'inputs': ['z147'], 'layer': 70, 'fanin': 1, 'num': 1, 'output': 'z149', 'type': 'NOT'}
+{'inputs': ['z148', 'z149'], 'layer': 71, 'fanin': 2, 'num': 0, 'output': 'z150', 'type': 'AND'}
+{'inputs': ['z149'], 'layer': 71, 'fanin': 1, 'num': 1, 'output': 'z151', 'type': 'NOT'}
+{'inputs': ['z150', 'z151'], 'layer': 72, 'fanin': 2, 'num': 0, 'output': 'z152', 'type': 'AND'}
+{'inputs': ['z151', 'z150'], 'layer': 72, 'fanin': 2, 'num': 1, 'output': 'z153', 'type': 'AND'}
+{'inputs': ['z152', 'z153'], 'layer': 73, 'fanin': 2, 'num': 0, 'output': 'z154', 'type': 'AND'}
+{'inputs': ['z152', 'z153'], 'layer': 73, 'fanin': 2, 'num': 1, 'output': 'z155', 'type': 'OR'}
+{'inputs': ['z154', 'z155'], 'layer': 74, 'fanin': 2, 'num': 0, 'output': 'z156', 'type': 'OR'}
+{'inputs': ['z155', 'z154'], 'layer': 74, 'fanin': 2, 'num': 1, 'output': 'z157', 'type': 'OR'}
+{'inputs': ['z156', 'z157'], 'layer': 75, 'fanin': 2, 'num': 0, 'output': 'z158', 'type': 'OR'}
+{'inputs': ['z156', 'z157'], 'layer': 75, 'fanin': 2, 'num': 1, 'output': 'z159', 'type': 'OR'}
+{'inputs': ['z159', 'z158'], 'layer': 76, 'fanin': 2, 'num': 0, 'output': 'z160', 'type': 'AND'}
+{'inputs': ['z159'], 'layer': 76, 'fanin': 1, 'num': 1, 'output': 'z161', 'type': 'NOT'}
+{'inputs': ['z161'], 'layer': 77, 'fanin': 1, 'num': 0, 'output': 'z162', 'type': 'NOT'}
+{'inputs': ['z161'], 'layer': 77, 'fanin': 1, 'num': 1, 'output': 'z163', 'type': 'NOT'}
+{'inputs': ['z162', 'z163'], 'layer': 78, 'fanin': 2, 'num': 0, 'output': 'z164', 'type': 'AND'}
+{'inputs': ['z162'], 'layer': 78, 'fanin': 1, 'num': 1, 'output': 'z165', 'type': 'NOT'}
+{'inputs': ['z165', 'z164'], 'layer': 79, 'fanin': 2, 'num': 0, 'output': 'z166', 'type': 'OR'}
+{'inputs': ['z165', 'z164'], 'layer': 79, 'fanin': 2, 'num': 1, 'output': 'z167', 'type': 'OR'}
+{'inputs': ['z167', 'z166'], 'layer': 80, 'fanin': 2, 'num': 0, 'output': 'z168', 'type': 'OR'}
+{'inputs': ['z166'], 'layer': 80, 'fanin': 1, 'num': 1, 'output': 'z169', 'type': 'NOT'}
+{'inputs': ['z168'], 'layer': 81, 'fanin': 1, 'num': 0, 'output': 'z170', 'type': 'NOT'}
+{'inputs': ['z169', 'z168'], 'layer': 81, 'fanin': 2, 'num': 1, 'output': 'z171', 'type': 'AND'}
+{'inputs': ['z170', 'z171'], 'layer': 82, 'fanin': 2, 'num': 0, 'output': 'z172', 'type': 'AND'}
+{'inputs': ['z171'], 'layer': 82, 'fanin': 1, 'num': 1, 'output': 'z173', 'type': 'NOT'}
+{'inputs': ['z172', 'z173'], 'layer': 83, 'fanin': 2, 'num': 0, 'output': 'z174', 'type': 'OR'}
+{'inputs': ['z173', 'z172'], 'layer': 83, 'fanin': 2, 'num': 1, 'output': 'z175', 'type': 'OR'}
+{'inputs': ['z175', 'z174'], 'layer': 84, 'fanin': 2, 'num': 0, 'output': 'z176', 'type': 'AND'}
+{'inputs': ['z175'], 'layer': 84, 'fanin': 1, 'num': 1, 'output': 'z177', 'type': 'NOT'}
+{'inputs': ['z176', 'z177'], 'layer': 85, 'fanin': 2, 'num': 0, 'output': 'z178', 'type': 'OR'}
+{'inputs': ['z176', 'z177'], 'layer': 85, 'fanin': 2, 'num': 1, 'output': 'z179', 'type': 'AND'}
+{'inputs': ['z179', 'z178'], 'layer': 86, 'fanin': 2, 'num': 0, 'output': 'z180', 'type': 'AND'}
+{'inputs': ['z178', 'z179'], 'layer': 86, 'fanin': 2, 'num': 1, 'output': 'z181', 'type': 'OR'}
+{'inputs': ['z181', 'z180'], 'layer': 87, 'fanin': 2, 'num': 0, 'output': 'z182', 'type': 'AND'}
+{'inputs': ['z181', 'z180'], 'layer': 87, 'fanin': 2, 'num': 1, 'output': 'z183', 'type': 'AND'}
+{'inputs': ['z182'], 'layer': 88, 'fanin': 1, 'num': 0, 'output': 'z184', 'type': 'NOT'}
+{'inputs': ['z183', 'z182'], 'layer': 88, 'fanin': 2, 'num': 1, 'output': 'z185', 'type': 'OR'}
+{'inputs': ['z184', 'z185'], 'layer': 89, 'fanin': 2, 'num': 0, 'output': 'z186', 'type': 'AND'}
+{'inputs': ['z185', 'z184'], 'layer': 89, 'fanin': 2, 'num': 1, 'output': 'z187', 'type': 'AND'}
+{'inputs': ['z186', 'z187'], 'layer': 90, 'fanin': 2, 'num': 0, 'output': 'z188', 'type': 'AND'}
+{'inputs': ['z186'], 'layer': 90, 'fanin': 1, 'num': 1, 'output': 'z189', 'type': 'NOT'}
+{'inputs': ['z189', 'z188'], 'layer': 91, 'fanin': 2, 'num': 0, 'output': 'z190', 'type': 'OR'}
+{'inputs': ['z189'], 'layer': 91, 'fanin': 1, 'num': 1, 'output': 'z191', 'type': 'NOT'}
+{'inputs': ['z190', 'z191'], 'layer': 92, 'fanin': 2, 'num': 0, 'output': 'z192', 'type': 'AND'}
+{'inputs': ['z191', 'z190'], 'layer': 92, 'fanin': 2, 'num': 1, 'output': 'z193', 'type': 'OR'}
+{'inputs': ['z192', 'z193'], 'layer': 93, 'fanin': 2, 'num': 0, 'output': 'z194', 'type': 'OR'}
+{'inputs': ['z192'], 'layer': 93, 'fanin': 1, 'num': 1, 'output': 'z195', 'type': 'NOT'}
+{'inputs': ['z194'], 'layer': 94, 'fanin': 1, 'num': 0, 'output': 'z196', 'type': 'NOT'}
+{'inputs': ['z194'], 'layer': 94, 'fanin': 1, 'num': 1, 'output': 'z197', 'type': 'NOT'}
+{'inputs': ['z196'], 'layer': 95, 'fanin': 1, 'num': 0, 'output': 'z198', 'type': 'NOT'}
+{'inputs': ['z197'], 'layer': 95, 'fanin': 1, 'num': 1, 'output': 'z199', 'type': 'NOT'}
+{'inputs': ['z199', 'z198'], 'layer': 96, 'fanin': 2, 'num': 0, 'output': 'z200', 'type': 'AND'}
+{'inputs': ['z199'], 'layer': 96, 'fanin': 1, 'num': 1, 'output': 'z201', 'type': 'NOT'}
+{'inputs': ['z201'], 'layer': 97, 'fanin': 1, 'num': 0, 'output': 'z202', 'type': 'NOT'}
+{'inputs': ['z201', 'z200'], 'layer': 97, 'fanin': 2, 'num': 1, 'output': 'z203', 'type': 'OR'}
+{'inputs': ['z203', 'z202'], 'layer': 98, 'fanin': 2, 'num': 0, 'output': 'z204', 'type': 'OR'}
+{'inputs': ['z203', 'z202'], 'layer': 98, 'fanin': 2, 'num': 1, 'output': 'z205', 'type': 'AND'}
+{'inputs': ['z204', 'z205'], 'layer': 99, 'fanin': 2, 'num': 0, 'output': 'z206', 'type': 'AND'}
+{'inputs': ['z204', 'z205'], 'layer': 99, 'fanin': 2, 'num': 1, 'output': 'z207', 'type': 'OR'}
+{'inputs': ['z207', 'z206'], 'layer': 100, 'fanin': 2, 'num': 0, 'output': 'z208', 'type': 'OR'}
+{'inputs': ['z207', 'z206'], 'layer': 100, 'fanin': 2, 'num': 1, 'output': 'z209', 'type': 'OR'}
+{'inputs': ['z209', 'z208'], 'layer': 101, 'fanin': 2, 'num': 0, 'output': 'z210', 'type': 'OR'}
+{'inputs': ['z209', 'z208'], 'layer': 101, 'fanin': 2, 'num': 1, 'output': 'z211', 'type': 'AND'}
+{'inputs': ['z211', 'z210'], 'layer': 102, 'fanin': 2, 'num': 0, 'output': 'z212', 'type': 'AND'}
+{'inputs': ['z211'], 'layer': 102, 'fanin': 1, 'num': 1, 'output': 'z213', 'type': 'NOT'}
+{'inputs': ['z213', 'z212'], 'layer': 103, 'fanin': 2, 'num': 0, 'output': 'z214', 'type': 'OR'}
+{'inputs': ['z212'], 'layer': 103, 'fanin': 1, 'num': 1, 'output': 'z215', 'type': 'NOT'}
+{'inputs': ['z214', 'z215'], 'layer': 104, 'fanin': 2, 'num': 0, 'output': 'z216', 'type': 'OR'}
+{'inputs': ['z214', 'z215'], 'layer': 104, 'fanin': 2, 'num': 1, 'output': 'z217', 'type': 'AND'}
+{'inputs': ['z216', 'z217'], 'layer': 105, 'fanin': 2, 'num': 0, 'output': 'z218', 'type': 'AND'}
+{'inputs': ['z217', 'z216'], 'layer': 105, 'fanin': 2, 'num': 1, 'output': 'z219', 'type': 'OR'}
+{'inputs': ['z218'], 'layer': 106, 'fanin': 1, 'num': 0, 'output': 'z220', 'type': 'NOT'}
+{'inputs': ['z219', 'z218'], 'layer': 106, 'fanin': 2, 'num': 1, 'output': 'z221', 'type': 'AND'}
+{'inputs': ['z220'], 'layer': 107, 'fanin': 1, 'num': 0, 'output': 'z222', 'type': 'NOT'}
+{'inputs': ['z221', 'z220'], 'layer': 107, 'fanin': 2, 'num': 1, 'output': 'z223', 'type': 'AND'}
+{'inputs': ['z222', 'z223'], 'layer': 108, 'fanin': 2, 'num': 0, 'output': 'z224', 'type': 'OR'}
+{'inputs': ['z223', 'z222'], 'layer': 108, 'fanin': 2, 'num': 1, 'output': 'z225', 'type': 'OR'}
+{'inputs': ['z225', 'z224'], 'layer': 109, 'fanin': 2, 'num': 0, 'output': 'z226', 'type': 'OR'}
+{'inputs': ['z225', 'z224'], 'layer': 109, 'fanin': 2, 'num': 1, 'output': 'z227', 'type': 'OR'}
+{'inputs': ['z226', 'z227'], 'layer': 110, 'fanin': 2, 'num': 0, 'output': 'z228', 'type': 'AND'}
+{'inputs': ['z226'], 'layer': 110, 'fanin': 1, 'num': 1, 'output': 'z229', 'type': 'NOT'}
+{'inputs': ['z228'], 'layer': 111, 'fanin': 1, 'num': 0, 'output': 'z230', 'type': 'NOT'}
+{'inputs': ['z228', 'z229'], 'layer': 111, 'fanin': 2, 'num': 1, 'output': 'z231', 'type': 'OR'}
+{'inputs': ['z231', 'z230'], 'layer': 112, 'fanin': 2, 'num': 0, 'output': 'z232', 'type': 'AND'}
+{'inputs': ['z230', 'z231'], 'layer': 112, 'fanin': 2, 'num': 1, 'output': 'z233', 'type': 'AND'}
+{'inputs': ['z232'], 'layer': 113, 'fanin': 1, 'num': 0, 'output': 'z234', 'type': 'NOT'}
+{'inputs': ['z232'], 'layer': 113, 'fanin': 1, 'num': 1, 'output': 'z235', 'type': 'NOT'}
+{'inputs': ['z234', 'z235'], 'layer': 114, 'fanin': 2, 'num': 0, 'output': 'z236', 'type': 'OR'}
+{'inputs': ['z234', 'z235'], 'layer': 114, 'fanin': 2, 'num': 1, 'output': 'z237', 'type': 'AND'}
+{'inputs': ['z237'], 'layer': 115, 'fanin': 1, 'num': 0, 'output': 'z238', 'type': 'NOT'}
+{'inputs': ['z236'], 'layer': 115, 'fanin': 1, 'num': 1, 'output': 'z239', 'type': 'NOT'}
+{'inputs': ['z238'], 'layer': 116, 'fanin': 1, 'num': 0, 'output': 'z240', 'type': 'NOT'}
+{'inputs': ['z238'], 'layer': 116, 'fanin': 1, 'num': 1, 'output': 'z241', 'type': 'NOT'}
+{'inputs': ['z240', 'z241'], 'layer': 117, 'fanin': 2, 'num': 0, 'output': 'z242', 'type': 'OR'}
+{'inputs': ['z240'], 'layer': 117, 'fanin': 1, 'num': 1, 'output': 'z243', 'type': 'NOT'}
+{'inputs': ['z242', 'z243'], 'layer': 118, 'fanin': 2, 'num': 0, 'output': 'z244', 'type': 'AND'}
+{'inputs': ['z243', 'z242'], 'layer': 118, 'fanin': 2, 'num': 1, 'output': 'z245', 'type': 'AND'}
+{'inputs': ['z244', 'z245'], 'layer': 119, 'fanin': 2, 'num': 0, 'output': 'z246', 'type': 'AND'}
+{'inputs': ['z245', 'z244'], 'layer': 119, 'fanin': 2, 'num': 1, 'output': 'z247', 'type': 'OR'}
+{'inputs': ['z247'], 'layer': 120, 'fanin': 1, 'num': 0, 'output': 'z248', 'type': 'NOT'}
+{'inputs': ['z246', 'z247'], 'layer': 120, 'fanin': 2, 'num': 1, 'output': 'z249', 'type': 'AND'}
+{'inputs': ['z249', 'z248'], 'layer': 121, 'fanin': 2, 'num': 0, 'output': 'z250', 'type': 'OR'}
+{'inputs': ['z248', 'z249'], 'layer': 121, 'fanin': 2, 'num': 1, 'output': 'z251', 'type': 'OR'}
+{'inputs': ['z250', 'z251'], 'layer': 122, 'fanin': 2, 'num': 0, 'output': 'z252', 'type': 'AND'}
+{'inputs': ['z251'], 'layer': 122, 'fanin': 1, 'num': 1, 'output': 'z253', 'type': 'NOT'}
+{'inputs': ['z253', 'z252'], 'layer': 123, 'fanin': 2, 'num': 0, 'output': 'z254', 'type': 'AND'}
+{'inputs': ['z252', 'z253'], 'layer': 123, 'fanin': 2, 'num': 1, 'output': 'z255', 'type': 'AND'}
+{'inputs': ['z255'], 'layer': 124, 'fanin': 1, 'num': 0, 'output': 'z256', 'type': 'NOT'}
+{'inputs': ['z254', 'z255'], 'layer': 124, 'fanin': 2, 'num': 1, 'output': 'z257', 'type': 'OR'}
+{'inputs': ['z257'], 'layer': 125, 'fanin': 1, 'num': 0, 'output': 'z258', 'type': 'NOT'}
+{'inputs': ['z256', 'z257'], 'layer': 125, 'fanin': 2, 'num': 1, 'output': 'z259', 'type': 'AND'}
+{'inputs': ['z259', 'z258'], 'layer': 126, 'fanin': 2, 'num': 0, 'output': 'z260', 'type': 'AND'}
+{'inputs': ['z259', 'z258'], 'layer': 126, 'fanin': 2, 'num': 1, 'output': 'z261', 'type': 'AND'}
+{'inputs': ['z261', 'z260'], 'layer': 127, 'fanin': 2, 'num': 0, 'output': 'z262', 'type': 'AND'}
+{'inputs': ['z260'], 'layer': 127, 'fanin': 1, 'num': 1, 'output': 'z263', 'type': 'NOT'}
+{'inputs': ['z262', 'z263'], 'layer': 128, 'fanin': 2, 'num': 0, 'output': 'z264', 'type': 'AND'}
+{'inputs': ['z262', 'z263'], 'layer': 128, 'fanin': 2, 'num': 1, 'output': 'z265', 'type': 'AND'}
+{'inputs': ['z265', 'z264'], 'layer': 129, 'fanin': 2, 'num': 0, 'output': 'z266', 'type': 'AND'}
+{'inputs': ['z264'], 'layer': 129, 'fanin': 1, 'num': 1, 'output': 'z267', 'type': 'NOT'}
+{'inputs': ['z267'], 'layer': 130, 'fanin': 1, 'num': 0, 'output': 'z268', 'type': 'NOT'}
+{'inputs': ['z267', 'z266'], 'layer': 130, 'fanin': 2, 'num': 1, 'output': 'z269', 'type': 'OR'}
+{'inputs': ['z268'], 'layer': 131, 'fanin': 1, 'num': 0, 'output': 'z270', 'type': 'NOT'}
+{'inputs': ['z268'], 'layer': 131, 'fanin': 1, 'num': 1, 'output': 'z271', 'type': 'NOT'}
+{'inputs': ['z271'], 'layer': 132, 'fanin': 1, 'num': 0, 'output': 'z272', 'type': 'NOT'}
+{'inputs': ['z271', 'z270'], 'layer': 132, 'fanin': 2, 'num': 1, 'output': 'z273', 'type': 'AND'}
+{'inputs': ['z273', 'z272'], 'layer': 133, 'fanin': 2, 'num': 0, 'output': 'z274', 'type': 'AND'}
+{'inputs': ['z272'], 'layer': 133, 'fanin': 1, 'num': 1, 'output': 'z275', 'type': 'NOT'}
+{'inputs': ['z275', 'z274'], 'layer': 134, 'fanin': 2, 'num': 0, 'output': 'z276', 'type': 'OR'}
+{'inputs': ['z275', 'z274'], 'layer': 134, 'fanin': 2, 'num': 1, 'output': 'z277', 'type': 'OR'}
+{'inputs': ['z277', 'z276'], 'layer': 135, 'fanin': 2, 'num': 0, 'output': 'z278', 'type': 'AND'}
+{'inputs': ['z277', 'z276'], 'layer': 135, 'fanin': 2, 'num': 1, 'output': 'z279', 'type': 'OR'}
+{'inputs': ['z279'], 'layer': 136, 'fanin': 1, 'num': 0, 'output': 'z280', 'type': 'NOT'}
+{'inputs': ['z278'], 'layer': 136, 'fanin': 1, 'num': 1, 'output': 'z281', 'type': 'NOT'}
+{'inputs': ['z281', 'z280'], 'layer': 137, 'fanin': 2, 'num': 0, 'output': 'z282', 'type': 'AND'}
+{'inputs': ['z280', 'z281'], 'layer': 137, 'fanin': 2, 'num': 1, 'output': 'z283', 'type': 'AND'}
+{'inputs': ['z283'], 'layer': 138, 'fanin': 1, 'num': 0, 'output': 'z284', 'type': 'NOT'}
+{'inputs': ['z282'], 'layer': 138, 'fanin': 1, 'num': 1, 'output': 'z285', 'type': 'NOT'}
+{'inputs': ['z284'], 'layer': 139, 'fanin': 1, 'num': 0, 'output': 'z286', 'type': 'NOT'}
+{'inputs': ['z285', 'z284'], 'layer': 139, 'fanin': 2, 'num': 1, 'output': 'z287', 'type': 'AND'}
+{'inputs': ['z287', 'z286'], 'layer': 140, 'fanin': 2, 'num': 0, 'output': 'z288', 'type': 'AND'}
+{'inputs': ['z287', 'z286'], 'layer': 140, 'fanin': 2, 'num': 1, 'output': 'z289', 'type': 'OR'}
+{'inputs': ['z289'], 'layer': 141, 'fanin': 1, 'num': 0, 'output': 'z290', 'type': 'NOT'}
+{'inputs': ['z289'], 'layer': 141, 'fanin': 1, 'num': 1, 'output': 'z291', 'type': 'NOT'}
+{'inputs': ['z290'], 'layer': 142, 'fanin': 1, 'num': 0, 'output': 'z292', 'type': 'NOT'}
+{'inputs': ['z290', 'z291'], 'layer': 142, 'fanin': 2, 'num': 1, 'output': 'z293', 'type': 'OR'}
+{'inputs': ['z292', 'z293'], 'layer': 143, 'fanin': 2, 'num': 0, 'output': 'z294', 'type': 'AND'}
+{'inputs': ['z293', 'z292'], 'layer': 143, 'fanin': 2, 'num': 1, 'output': 'z295', 'type': 'AND'}
+{'inputs': ['z294', 'z295'], 'layer': 144, 'fanin': 2, 'num': 0, 'output': 'z296', 'type': 'AND'}
+{'inputs': ['z295', 'z294'], 'layer': 144, 'fanin': 2, 'num': 1, 'output': 'z297', 'type': 'AND'}
+{'inputs': ['z296', 'z297'], 'layer': 145, 'fanin': 2, 'num': 0, 'output': 'z298', 'type': 'OR'}
+{'inputs': ['z297', 'z296'], 'layer': 145, 'fanin': 2, 'num': 1, 'output': 'z299', 'type': 'AND'}
+{'inputs': ['z298', 'z299'], 'layer': 146, 'fanin': 2, 'num': 0, 'output': 'z300', 'type': 'OR'}
+{'inputs': ['z298'], 'layer': 146, 'fanin': 1, 'num': 1, 'output': 'z301', 'type': 'NOT'}
+{'inputs': ['z301'], 'layer': 147, 'fanin': 1, 'num': 0, 'output': 'z302', 'type': 'NOT'}
+{'inputs': ['z301', 'z300'], 'layer': 147, 'fanin': 2, 'num': 1, 'output': 'z303', 'type': 'AND'}
+{'inputs': ['z302', 'z303'], 'layer': 148, 'fanin': 2, 'num': 0, 'output': 'z304', 'type': 'AND'}
+{'inputs': ['z302'], 'layer': 148, 'fanin': 1, 'num': 1, 'output': 'z305', 'type': 'NOT'}
+{'inputs': ['z305', 'z304'], 'layer': 149, 'fanin': 2, 'num': 0, 'output': 'z306', 'type': 'OR'}
+{'inputs': ['z304', 'z305'], 'layer': 149, 'fanin': 2, 'num': 1, 'output': 'z307', 'type': 'AND'}
+{'inputs': ['z306', 'z307'], 'layer': 150, 'fanin': 2, 'num': 0, 'output': 'z308', 'type': 'AND'}
+{'inputs': ['z307', 'z306'], 'layer': 150, 'fanin': 2, 'num': 1, 'output': 'z309', 'type': 'AND'}
+{'inputs': ['z308'], 'layer': 151, 'fanin': 1, 'num': 0, 'output': 'z310', 'type': 'NOT'}
+{'inputs': ['z308', 'z309'], 'layer': 151, 'fanin': 2, 'num': 1, 'output': 'z311', 'type': 'AND'}
+{'inputs': ['z311'], 'layer': 152, 'fanin': 1, 'num': 0, 'output': 'z312', 'type': 'NOT'}
+{'inputs': ['z311'], 'layer': 152, 'fanin': 1, 'num': 1, 'output': 'z313', 'type': 'NOT'}
+{'inputs': ['z312', 'z313'], 'layer': 153, 'fanin': 2, 'num': 0, 'output': 'z314', 'type': 'OR'}
+{'inputs': ['z312', 'z313'], 'layer': 153, 'fanin': 2, 'num': 1, 'output': 'z315', 'type': 'AND'}
+{'inputs': ['z315'], 'layer': 154, 'fanin': 1, 'num': 0, 'output': 'z316', 'type': 'NOT'}
+{'inputs': ['z314'], 'layer': 154, 'fanin': 1, 'num': 1, 'output': 'z317', 'type': 'NOT'}
+{'inputs': ['z317', 'z316'], 'layer': 155, 'fanin': 2, 'num': 0, 'output': 'z318', 'type': 'OR'}
+{'inputs': ['z316'], 'layer': 155, 'fanin': 1, 'num': 1, 'output': 'z319', 'type': 'NOT'}
+{'inputs': ['z319', 'z318'], 'layer': 156, 'fanin': 2, 'num': 0, 'output': 'z320', 'type': 'OR'}
+{'inputs': ['z318', 'z319'], 'layer': 156, 'fanin': 2, 'num': 1, 'output': 'z321', 'type': 'OR'}
+{'inputs': ['z321', 'z320'], 'layer': 157, 'fanin': 2, 'num': 0, 'output': 'z322', 'type': 'AND'}
+{'inputs': ['z321', 'z320'], 'layer': 157, 'fanin': 2, 'num': 1, 'output': 'z323', 'type': 'AND'}
+{'inputs': ['z322', 'z323'], 'layer': 158, 'fanin': 2, 'num': 0, 'output': 'z324', 'type': 'OR'}
+{'inputs': ['z323', 'z322'], 'layer': 158, 'fanin': 2, 'num': 1, 'output': 'z325', 'type': 'AND'}
+{'inputs': ['z325'], 'layer': 159, 'fanin': 1, 'num': 0, 'output': 'z326', 'type': 'NOT'}
+{'inputs': ['z325', 'z324'], 'layer': 159, 'fanin': 2, 'num': 1, 'output': 'z327', 'type': 'AND'}
+{'inputs': ['z327', 'z326'], 'layer': 160, 'fanin': 2, 'num': 0, 'output': 'z328', 'type': 'OR'}
+{'inputs': ['z326', 'z327'], 'layer': 160, 'fanin': 2, 'num': 1, 'output': 'z329', 'type': 'OR'}
+{'inputs': ['z328', 'z329'], 'layer': 161, 'fanin': 2, 'num': 0, 'output': 'z330', 'type': 'AND'}
+{'inputs': ['z328', 'z329'], 'layer': 161, 'fanin': 2, 'num': 1, 'output': 'z331', 'type': 'OR'}
+{'inputs': ['z330', 'z331'], 'layer': 162, 'fanin': 2, 'num': 0, 'output': 'z332', 'type': 'AND'}
+{'inputs': ['z330'], 'layer': 162, 'fanin': 1, 'num': 1, 'output': 'z333', 'type': 'NOT'}
+{'inputs': ['z332'], 'layer': 163, 'fanin': 1, 'num': 0, 'output': 'z334', 'type': 'NOT'}
+{'inputs': ['z332'], 'layer': 163, 'fanin': 1, 'num': 1, 'output': 'z335', 'type': 'NOT'}
+{'inputs': ['z334'], 'layer': 164, 'fanin': 1, 'num': 0, 'output': 'z336', 'type': 'NOT'}
+{'inputs': ['z334'], 'layer': 164, 'fanin': 1, 'num': 1, 'output': 'z337', 'type': 'NOT'}
+{'inputs': ['z336', 'z337'], 'layer': 165, 'fanin': 2, 'num': 0, 'output': 'z338', 'type': 'AND'}
+{'inputs': ['z337', 'z336'], 'layer': 165, 'fanin': 2, 'num': 1, 'output': 'z339', 'type': 'OR'}
+{'inputs': ['z339', 'z338'], 'layer': 166, 'fanin': 2, 'num': 0, 'output': 'z340', 'type': 'AND'}
+{'inputs': ['z339', 'z338'], 'layer': 166, 'fanin': 2, 'num': 1, 'output': 'z341', 'type': 'OR'}
+{'inputs': ['z340'], 'layer': 167, 'fanin': 1, 'num': 0, 'output': 'z342', 'type': 'NOT'}
+{'inputs': ['z340', 'z341'], 'layer': 167, 'fanin': 2, 'num': 1, 'output': 'z343', 'type': 'OR'}
+{'inputs': ['z343', 'z342'], 'layer': 168, 'fanin': 2, 'num': 0, 'output': 'z344', 'type': 'AND'}
+{'inputs': ['z343', 'z342'], 'layer': 168, 'fanin': 2, 'num': 1, 'output': 'z345', 'type': 'OR'}
+{'inputs': ['z344'], 'layer': 169, 'fanin': 1, 'num': 0, 'output': 'z346', 'type': 'NOT'}
+{'inputs': ['z345'], 'layer': 169, 'fanin': 1, 'num': 1, 'output': 'z347', 'type': 'NOT'}
+{'inputs': ['z346'], 'layer': 170, 'fanin': 1, 'num': 0, 'output': 'z348', 'type': 'NOT'}
+{'inputs': ['z346', 'z347'], 'layer': 170, 'fanin': 2, 'num': 1, 'output': 'z349', 'type': 'OR'}
+{'inputs': ['z349', 'z348'], 'layer': 171, 'fanin': 2, 'num': 0, 'output': 'z350', 'type': 'OR'}
+{'inputs': ['z349'], 'layer': 171, 'fanin': 1, 'num': 1, 'output': 'z351', 'type': 'NOT'}
+{'inputs': ['z350', 'z351'], 'layer': 172, 'fanin': 2, 'num': 0, 'output': 'z352', 'type': 'OR'}
+{'inputs': ['z351', 'z350'], 'layer': 172, 'fanin': 2, 'num': 1, 'output': 'z353', 'type': 'OR'}
+{'inputs': ['z352', 'z353'], 'layer': 173, 'fanin': 2, 'num': 0, 'output': 'z354', 'type': 'AND'}
+{'inputs': ['z352', 'z353'], 'layer': 173, 'fanin': 2, 'num': 1, 'output': 'z355', 'type': 'OR'}
+{'inputs': ['z354'], 'layer': 174, 'fanin': 1, 'num': 0, 'output': 'z356', 'type': 'NOT'}
+{'inputs': ['z355', 'z354'], 'layer': 174, 'fanin': 2, 'num': 1, 'output': 'z357', 'type': 'OR'}
+{'inputs': ['z356'], 'layer': 175, 'fanin': 1, 'num': 0, 'output': 'z358', 'type': 'NOT'}
+{'inputs': ['z357', 'z356'], 'layer': 175, 'fanin': 2, 'num': 1, 'output': 'z359', 'type': 'AND'}
+{'inputs': ['z358', 'z359'], 'layer': 176, 'fanin': 2, 'num': 0, 'output': 'z360', 'type': 'AND'}
+{'inputs': ['z358'], 'layer': 176, 'fanin': 1, 'num': 1, 'output': 'z361', 'type': 'NOT'}
+{'inputs': ['z360', 'z361'], 'layer': 177, 'fanin': 2, 'num': 0, 'output': 'z362', 'type': 'AND'}
+{'inputs': ['z360'], 'layer': 177, 'fanin': 1, 'num': 1, 'output': 'z363', 'type': 'NOT'}
+{'inputs': ['z362', 'z363'], 'layer': 178, 'fanin': 2, 'num': 0, 'output': 'z364', 'type': 'OR'}
+{'inputs': ['z363', 'z362'], 'layer': 178, 'fanin': 2, 'num': 1, 'output': 'z365', 'type': 'AND'}
+{'inputs': ['z364', 'z365'], 'layer': 179, 'fanin': 2, 'num': 0, 'output': 'z366', 'type': 'OR'}
+{'inputs': ['z365', 'z364'], 'layer': 179, 'fanin': 2, 'num': 1, 'output': 'z367', 'type': 'OR'}
+{'inputs': ['z366'], 'layer': 180, 'fanin': 1, 'num': 0, 'output': 'z368', 'type': 'NOT'}
+{'inputs': ['z367', 'z366'], 'layer': 180, 'fanin': 2, 'num': 1, 'output': 'z369', 'type': 'OR'}
+{'inputs': ['z368'], 'layer': 181, 'fanin': 1, 'num': 0, 'output': 'z370', 'type': 'NOT'}
+{'inputs': ['z368', 'z369'], 'layer': 181, 'fanin': 2, 'num': 1, 'output': 'z371', 'type': 'AND'}
+{'inputs': ['z371', 'z370'], 'layer': 182, 'fanin': 2, 'num': 0, 'output': 'z372', 'type': 'OR'}
+{'inputs': ['z371'], 'layer': 182, 'fanin': 1, 'num': 1, 'output': 'z373', 'type': 'NOT'}
+{'inputs': ['z373'], 'layer': 183, 'fanin': 1, 'num': 0, 'output': 'z374', 'type': 'NOT'}
+{'inputs': ['z373', 'z372'], 'layer': 183, 'fanin': 2, 'num': 1, 'output': 'z375', 'type': 'OR'}
+{'inputs': ['z375'], 'layer': 184, 'fanin': 1, 'num': 0, 'output': 'z376', 'type': 'NOT'}
+{'inputs': ['z374', 'z375'], 'layer': 184, 'fanin': 2, 'num': 1, 'output': 'z377', 'type': 'AND'}
+{'inputs': ['z377'], 'layer': 185, 'fanin': 1, 'num': 0, 'output': 'z378', 'type': 'NOT'}
+{'inputs': ['z376'], 'layer': 185, 'fanin': 1, 'num': 1, 'output': 'z379', 'type': 'NOT'}
+{'inputs': ['z379'], 'layer': 186, 'fanin': 1, 'num': 0, 'output': 'z380', 'type': 'NOT'}
+{'inputs': ['z378', 'z379'], 'layer': 186, 'fanin': 2, 'num': 1, 'output': 'z381', 'type': 'AND'}
+{'inputs': ['z380', 'z381'], 'layer': 187, 'fanin': 2, 'num': 0, 'output': 'z382', 'type': 'AND'}
+{'inputs': ['z380'], 'layer': 187, 'fanin': 1, 'num': 1, 'output': 'z383', 'type': 'NOT'}
+{'inputs': ['z383', 'z382'], 'layer': 188, 'fanin': 2, 'num': 0, 'output': 'z384', 'type': 'AND'}
+{'inputs': ['z382', 'z383'], 'layer': 188, 'fanin': 2, 'num': 1, 'output': 'z385', 'type': 'OR'}
+{'inputs': ['z384'], 'layer': 189, 'fanin': 1, 'num': 0, 'output': 'z386', 'type': 'NOT'}
+{'inputs': ['z384', 'z385'], 'layer': 189, 'fanin': 2, 'num': 1, 'output': 'z387', 'type': 'AND'}
+{'inputs': ['z387', 'z386'], 'layer': 190, 'fanin': 2, 'num': 0, 'output': 'z388', 'type': 'OR'}
+{'inputs': ['z387', 'z386'], 'layer': 190, 'fanin': 2, 'num': 1, 'output': 'z389', 'type': 'OR'}
+{'inputs': ['z388', 'z389'], 'layer': 191, 'fanin': 2, 'num': 0, 'output': 'z390', 'type': 'OR'}
+{'inputs': ['z389', 'z388'], 'layer': 191, 'fanin': 2, 'num': 1, 'output': 'z391', 'type': 'OR'}
+{'inputs': ['z391', 'z390'], 'layer': 192, 'fanin': 2, 'num': 0, 'output': 'z392', 'type': 'OR'}
+{'inputs': ['z391'], 'layer': 192, 'fanin': 1, 'num': 1, 'output': 'z393', 'type': 'NOT'}
+{'inputs': ['z393', 'z392'], 'layer': 193, 'fanin': 2, 'num': 0, 'output': 'z394', 'type': 'OR'}
+{'inputs': ['z392', 'z393'], 'layer': 193, 'fanin': 2, 'num': 1, 'output': 'z395', 'type': 'OR'}
+{'inputs': ['z395', 'z394'], 'layer': 194, 'fanin': 2, 'num': 0, 'output': 'z396', 'type': 'AND'}
+{'inputs': ['z395', 'z394'], 'layer': 194, 'fanin': 2, 'num': 1, 'output': 'z397', 'type': 'AND'}
+{'inputs': ['z396'], 'layer': 195, 'fanin': 1, 'num': 0, 'output': 'z398', 'type': 'NOT'}
+{'inputs': ['z396', 'z397'], 'layer': 195, 'fanin': 2, 'num': 1, 'output': 'z399', 'type': 'OR'}
+{'inputs': ['z399', 'z398'], 'layer': 196, 'fanin': 2, 'num': 0, 'output': 'z400', 'type': 'AND'}
+{'inputs': ['z398', 'z399'], 'layer': 196, 'fanin': 2, 'num': 1, 'output': 'z401', 'type': 'OR'}
+{'inputs': ['z400', 'z401'], 'layer': 197, 'fanin': 2, 'num': 0, 'output': 'z402', 'type': 'AND'}
+{'inputs': ['z400', 'z401'], 'layer': 197, 'fanin': 2, 'num': 1, 'output': 'z403', 'type': 'AND'}
+{'inputs': ['z403', 'z402'], 'layer': 198, 'fanin': 2, 'num': 0, 'output': 'z404', 'type': 'AND'}
+{'inputs': ['z403'], 'layer': 198, 'fanin': 1, 'num': 1, 'output': 'z405', 'type': 'NOT'}
+{'inputs': ['z404', 'z405'], 'layer': 199, 'fanin': 2, 'num': 0, 'output': 'z406', 'type': 'AND'}
+{'inputs': ['z405', 'z404'], 'layer': 199, 'fanin': 2, 'num': 1, 'output': 'z407', 'type': 'OR'}
+{'inputs': ['z406', 'z407'], 'layer': 200, 'fanin': 2, 'num': 0, 'output': 'z408', 'type': 'AND'}
+{'inputs': ['z406', 'z407'], 'layer': 200, 'fanin': 2, 'num': 1, 'output': 'z409', 'type': 'OR'}
+{'inputs': ['z408'], 'layer': 201, 'fanin': 1, 'num': 0, 'output': 'z410', 'type': 'NOT'}
+{'inputs': ['z408'], 'layer': 201, 'fanin': 1, 'num': 1, 'output': 'z411', 'type': 'NOT'}
+{'inputs': ['z410'], 'layer': 202, 'fanin': 1, 'num': 0, 'output': 'z412', 'type': 'NOT'}
+{'inputs': ['z410', 'z411'], 'layer': 202, 'fanin': 2, 'num': 1, 'output': 'z413', 'type': 'AND'}
+{'inputs': ['z413', 'z412'], 'layer': 203, 'fanin': 2, 'num': 0, 'output': 'z414', 'type': 'AND'}
+{'inputs': ['z412'], 'layer': 203, 'fanin': 1, 'num': 1, 'output': 'z415', 'type': 'NOT'}
+{'inputs': ['z414', 'z415'], 'layer': 204, 'fanin': 2, 'num': 0, 'output': 'z416', 'type': 'AND'}
+{'inputs': ['z415', 'z414'], 'layer': 204, 'fanin': 2, 'num': 1, 'output': 'z417', 'type': 'OR'}
+{'inputs': ['z417', 'z416'], 'layer': 205, 'fanin': 2, 'num': 0, 'output': 'z418', 'type': 'OR'}
+{'inputs': ['z417', 'z416'], 'layer': 205, 'fanin': 2, 'num': 1, 'output': 'z419', 'type': 'OR'}
+{'inputs': ['z419', 'z418'], 'layer': 206, 'fanin': 2, 'num': 0, 'output': 'z420', 'type': 'AND'}
+{'inputs': ['z419'], 'layer': 206, 'fanin': 1, 'num': 1, 'output': 'z421', 'type': 'NOT'}
+{'inputs': ['z420'], 'layer': 207, 'fanin': 1, 'num': 0, 'output': 'z422', 'type': 'NOT'}
+{'inputs': ['z420', 'z421'], 'layer': 207, 'fanin': 2, 'num': 1, 'output': 'z423', 'type': 'AND'}
+{'inputs': ['z423', 'z422'], 'layer': 208, 'fanin': 2, 'num': 0, 'output': 'z424', 'type': 'AND'}
+{'inputs': ['z422', 'z423'], 'layer': 208, 'fanin': 2, 'num': 1, 'output': 'z425', 'type': 'AND'}
+{'inputs': ['z424', 'z425'], 'layer': 209, 'fanin': 2, 'num': 0, 'output': 'z426', 'type': 'OR'}
+{'inputs': ['z425', 'z424'], 'layer': 209, 'fanin': 2, 'num': 1, 'output': 'z427', 'type': 'OR'}
+{'inputs': ['z427', 'z426'], 'layer': 210, 'fanin': 2, 'num': 0, 'output': 'z428', 'type': 'OR'}
+{'inputs': ['z427', 'z426'], 'layer': 210, 'fanin': 2, 'num': 1, 'output': 'z429', 'type': 'OR'}
+{'inputs': ['z429'], 'layer': 211, 'fanin': 1, 'num': 0, 'output': 'z430', 'type': 'NOT'}
+{'inputs': ['z428', 'z429'], 'layer': 211, 'fanin': 2, 'num': 1, 'output': 'z431', 'type': 'AND'}
+{'inputs': ['z430'], 'layer': 212, 'fanin': 1, 'num': 0, 'output': 'z432', 'type': 'NOT'}
+{'inputs': ['z430', 'z431'], 'layer': 212, 'fanin': 2, 'num': 1, 'output': 'z433', 'type': 'OR'}
+{'inputs': ['z432', 'z433'], 'layer': 213, 'fanin': 2, 'num': 0, 'output': 'z434', 'type': 'OR'}
+{'inputs': ['z432', 'z433'], 'layer': 213, 'fanin': 2, 'num': 1, 'output': 'z435', 'type': 'OR'}
+{'inputs': ['z435', 'z434'], 'layer': 214, 'fanin': 2, 'num': 0, 'output': 'z436', 'type': 'OR'}
+{'inputs': ['z435'], 'layer': 214, 'fanin': 1, 'num': 1, 'output': 'z437', 'type': 'NOT'}
+{'inputs': ['z436'], 'layer': 215, 'fanin': 1, 'num': 0, 'output': 'z438', 'type': 'NOT'}
+{'inputs': ['z436', 'z437'], 'layer': 215, 'fanin': 2, 'num': 1, 'output': 'z439', 'type': 'AND'}
+{'inputs': ['z439'], 'layer': 216, 'fanin': 1, 'num': 0, 'output': 'z440', 'type': 'NOT'}
+{'inputs': ['z439', 'z438'], 'layer': 216, 'fanin': 2, 'num': 1, 'output': 'z441', 'type': 'AND'}
+{'inputs': ['z441', 'z440'], 'layer': 217, 'fanin': 2, 'num': 0, 'output': 'z442', 'type': 'OR'}
+{'inputs': ['z440', 'z441'], 'layer': 217, 'fanin': 2, 'num': 1, 'output': 'z443', 'type': 'AND'}
+{'inputs': ['z443', 'z442'], 'layer': 218, 'fanin': 2, 'num': 0, 'output': 'z444', 'type': 'AND'}
+{'inputs': ['z443', 'z442'], 'layer': 218, 'fanin': 2, 'num': 1, 'output': 'z445', 'type': 'OR'}
+{'inputs': ['z445', 'z444'], 'layer': 219, 'fanin': 2, 'num': 0, 'output': 'z446', 'type': 'OR'}
+{'inputs': ['z445', 'z444'], 'layer': 219, 'fanin': 2, 'num': 1, 'output': 'z447', 'type': 'OR'}
+{'inputs': ['z447', 'z446'], 'layer': 220, 'fanin': 2, 'num': 0, 'output': 'z448', 'type': 'OR'}
+{'inputs': ['z447', 'z446'], 'layer': 220, 'fanin': 2, 'num': 1, 'output': 'z449', 'type': 'OR'}
+{'inputs': ['z449'], 'layer': 221, 'fanin': 1, 'num': 0, 'output': 'z450', 'type': 'NOT'}
+{'inputs': ['z448', 'z449'], 'layer': 221, 'fanin': 2, 'num': 1, 'output': 'z451', 'type': 'OR'}
+{'inputs': ['z451'], 'layer': 222, 'fanin': 1, 'num': 0, 'output': 'z452', 'type': 'NOT'}
+{'inputs': ['z451', 'z450'], 'layer': 222, 'fanin': 2, 'num': 1, 'output': 'z453', 'type': 'OR'}
+{'inputs': ['z452'], 'layer': 223, 'fanin': 1, 'num': 0, 'output': 'z454', 'type': 'NOT'}
+{'inputs': ['z453'], 'layer': 223, 'fanin': 1, 'num': 1, 'output': 'z455', 'type': 'NOT'}
+{'inputs': ['z454', 'z455'], 'layer': 224, 'fanin': 2, 'num': 0, 'output': 'z456', 'type': 'OR'}
+{'inputs': ['z454'], 'layer': 224, 'fanin': 1, 'num': 1, 'output': 'z457', 'type': 'NOT'}
+{'inputs': ['z456', 'z457'], 'layer': 225, 'fanin': 2, 'num': 0, 'output': 'z458', 'type': 'OR'}
+{'inputs': ['z456'], 'layer': 225, 'fanin': 1, 'num': 1, 'output': 'z459', 'type': 'NOT'}
+{'inputs': ['z458', 'z459'], 'layer': 226, 'fanin': 2, 'num': 0, 'output': 'z460', 'type': 'AND'}
+{'inputs': ['z459'], 'layer': 226, 'fanin': 1, 'num': 1, 'output': 'z461', 'type': 'NOT'}
+{'inputs': ['z461', 'z460'], 'layer': 227, 'fanin': 2, 'num': 0, 'output': 'z462', 'type': 'OR'}
+{'inputs': ['z460', 'z461'], 'layer': 227, 'fanin': 2, 'num': 1, 'output': 'z463', 'type': 'AND'}
+{'inputs': ['z462', 'z463'], 'layer': 228, 'fanin': 2, 'num': 0, 'output': 'z464', 'type': 'AND'}
+{'inputs': ['z463', 'z462'], 'layer': 228, 'fanin': 2, 'num': 1, 'output': 'z465', 'type': 'OR'}
+{'inputs': ['z465', 'z464'], 'layer': 229, 'fanin': 2, 'num': 0, 'output': 'z466', 'type': 'OR'}
+{'inputs': ['z465', 'z464'], 'layer': 229, 'fanin': 2, 'num': 1, 'output': 'z467', 'type': 'OR'}
+{'inputs': ['z467', 'z466'], 'layer': 230, 'fanin': 2, 'num': 0, 'output': 'z468', 'type': 'AND'}
+{'inputs': ['z466', 'z467'], 'layer': 230, 'fanin': 2, 'num': 1, 'output': 'z469', 'type': 'OR'}
+{'inputs': ['z469', 'z468'], 'layer': 231, 'fanin': 2, 'num': 0, 'output': 'z470', 'type': 'AND'}
+{'inputs': ['z469', 'z468'], 'layer': 231, 'fanin': 2, 'num': 1, 'output': 'z471', 'type': 'OR'}
+{'inputs': ['z471', 'z470'], 'layer': 232, 'fanin': 2, 'num': 0, 'output': 'z472', 'type': 'AND'}
+{'inputs': ['z471', 'z470'], 'layer': 232, 'fanin': 2, 'num': 1, 'output': 'z473', 'type': 'AND'}
+{'inputs': ['z472'], 'layer': 233, 'fanin': 1, 'num': 0, 'output': 'z474', 'type': 'NOT'}
+{'inputs': ['z472', 'z473'], 'layer': 233, 'fanin': 2, 'num': 1, 'output': 'z475', 'type': 'AND'}
+{'inputs': ['z474', 'z475'], 'layer': 234, 'fanin': 2, 'num': 0, 'output': 'z476', 'type': 'OR'}
+{'inputs': ['z474'], 'layer': 234, 'fanin': 1, 'num': 1, 'output': 'z477', 'type': 'NOT'}
+{'inputs': ['z476'], 'layer': 235, 'fanin': 1, 'num': 0, 'output': 'z478', 'type': 'NOT'}
+{'inputs': ['z476', 'z477'], 'layer': 235, 'fanin': 2, 'num': 1, 'output': 'z479', 'type': 'AND'}
+{'inputs': ['z479'], 'layer': 236, 'fanin': 1, 'num': 0, 'output': 'z480', 'type': 'NOT'}
+{'inputs': ['z479', 'z478'], 'layer': 236, 'fanin': 2, 'num': 1, 'output': 'z481', 'type': 'AND'}
+{'inputs': ['z481'], 'layer': 237, 'fanin': 1, 'num': 0, 'output': 'z482', 'type': 'NOT'}
+{'inputs': ['z481', 'z480'], 'layer': 237, 'fanin': 2, 'num': 1, 'output': 'z483', 'type': 'AND'}
+{'inputs': ['z483', 'z482'], 'layer': 238, 'fanin': 2, 'num': 0, 'output': 'z484', 'type': 'AND'}
+{'inputs': ['z483'], 'layer': 238, 'fanin': 1, 'num': 1, 'output': 'z485', 'type': 'NOT'}
+{'inputs': ['z484'], 'layer': 239, 'fanin': 1, 'num': 0, 'output': 'z486', 'type': 'NOT'}
+{'inputs': ['z484', 'z485'], 'layer': 239, 'fanin': 2, 'num': 1, 'output': 'z487', 'type': 'AND'}
+{'inputs': ['z486', 'z487'], 'layer': 240, 'fanin': 2, 'num': 0, 'output': 'z488', 'type': 'AND'}
+{'inputs': ['z486'], 'layer': 240, 'fanin': 1, 'num': 1, 'output': 'z489', 'type': 'NOT'}
+{'inputs': ['z488', 'z489'], 'layer': 241, 'fanin': 2, 'num': 0, 'output': 'z490', 'type': 'AND'}
+{'inputs': ['z489'], 'layer': 241, 'fanin': 1, 'num': 1, 'output': 'z491', 'type': 'NOT'}
+{'inputs': ['z491', 'z490'], 'layer': 242, 'fanin': 2, 'num': 0, 'output': 'z492', 'type': 'AND'}
+{'inputs': ['z491'], 'layer': 242, 'fanin': 1, 'num': 1, 'output': 'z493', 'type': 'NOT'}
+{'inputs': ['z492'], 'layer': 243, 'fanin': 1, 'num': 0, 'output': 'z494', 'type': 'NOT'}
+{'inputs': ['z492'], 'layer': 243, 'fanin': 1, 'num': 1, 'output': 'z495', 'type': 'NOT'}
+{'inputs': ['z495', 'z494'], 'layer': 244, 'fanin': 2, 'num': 0, 'output': 'z496', 'type': 'OR'}
+{'inputs': ['z494', 'z495'], 'layer': 244, 'fanin': 2, 'num': 1, 'output': 'z497', 'type': 'OR'}
+{'inputs': ['z497', 'z496'], 'layer': 245, 'fanin': 2, 'num': 0, 'output': 'z498', 'type': 'AND'}
+{'inputs': ['z497'], 'layer': 245, 'fanin': 1, 'num': 1, 'output': 'z499', 'type': 'NOT'}
+{'inputs': ['z499'], 'layer': 246, 'fanin': 1, 'num': 0, 'output': 'z500', 'type': 'NOT'}
+{'inputs': ['z498', 'z499'], 'layer': 246, 'fanin': 2, 'num': 1, 'output': 'z501', 'type': 'OR'}
+{'inputs': ['z500', 'z501'], 'layer': 247, 'fanin': 2, 'num': 0, 'output': 'z502', 'type': 'AND'}
+{'inputs': ['z501', 'z500'], 'layer': 247, 'fanin': 2, 'num': 1, 'output': 'z503', 'type': 'AND'}
+{'inputs': ['z502', 'z503'], 'layer': 248, 'fanin': 2, 'num': 0, 'output': 'z504', 'type': 'OR'}
+{'inputs': ['z503', 'z502'], 'layer': 248, 'fanin': 2, 'num': 1, 'output': 'z505', 'type': 'OR'}
+{'inputs': ['z505', 'z504'], 'layer': 249, 'fanin': 2, 'num': 0, 'output': 'z506', 'type': 'AND'}
+{'inputs': ['z505'], 'layer': 249, 'fanin': 1, 'num': 1, 'output': 'z507', 'type': 'NOT'}
+{'inputs': ['z506'], 'layer': 250, 'fanin': 1, 'num': 0, 'output': 'z508', 'type': 'NOT'}
+{'inputs': ['z506', 'z507'], 'layer': 250, 'fanin': 2, 'num': 1, 'output': 'z509', 'type': 'OR'}
+{'inputs': ['z509', 'z508'], 'layer': 251, 'fanin': 2, 'num': 0, 'output': 'z510', 'type': 'AND'}
+{'inputs': ['z508'], 'layer': 251, 'fanin': 1, 'num': 1, 'output': 'z511', 'type': 'NOT'}
+{'inputs': ['z511'], 'layer': 252, 'fanin': 1, 'num': 0, 'output': 'z512', 'type': 'NOT'}
+{'inputs': ['z511', 'z510'], 'layer': 252, 'fanin': 2, 'num': 1, 'output': 'z513', 'type': 'OR'}
+{'inputs': ['z513', 'z512'], 'layer': 253, 'fanin': 2, 'num': 0, 'output': 'z514', 'type': 'OR'}
+{'inputs': ['z513', 'z512'], 'layer': 253, 'fanin': 2, 'num': 1, 'output': 'z515', 'type': 'OR'}
+{'inputs': ['z514', 'z515'], 'layer': 254, 'fanin': 2, 'num': 0, 'output': 'z516', 'type': 'OR'}
+{'inputs': ['z514', 'z515'], 'layer': 254, 'fanin': 2, 'num': 1, 'output': 'z517', 'type': 'AND'}
+{'inputs': ['z517'], 'layer': 255, 'fanin': 1, 'num': 0, 'output': 'z518', 'type': 'NOT'}
+{'inputs': ['z516', 'z517'], 'layer': 255, 'fanin': 2, 'num': 1, 'output': 'z519', 'type': 'OR'}
+{'inputs': ['z519', 'z518'], 'layer': 256, 'fanin': 2, 'num': 0, 'output': 'z520', 'type': 'AND'}
+{'inputs': ['z519'], 'layer': 256, 'fanin': 1, 'num': 1, 'output': 'z521', 'type': 'NOT'}
+{'inputs': ['z521'], 'layer': 257, 'fanin': 1, 'num': 0, 'output': 'z522', 'type': 'NOT'}
+{'inputs': ['z520', 'z521'], 'layer': 257, 'fanin': 2, 'num': 1, 'output': 'z523', 'type': 'AND'}
+{'inputs': ['z523', 'z522'], 'layer': 258, 'fanin': 2, 'num': 0, 'output': 'z524', 'type': 'OR'}
+{'inputs': ['z522', 'z523'], 'layer': 258, 'fanin': 2, 'num': 1, 'output': 'z525', 'type': 'OR'}
+{'inputs': ['z525', 'z524'], 'layer': 259, 'fanin': 2, 'num': 0, 'output': 'z526', 'type': 'AND'}
+{'inputs': ['z524', 'z525'], 'layer': 259, 'fanin': 2, 'num': 1, 'output': 'z527', 'type': 'AND'}
+{'inputs': ['z526', 'z527'], 'layer': 260, 'fanin': 2, 'num': 0, 'output': 'z528', 'type': 'OR'}
+{'inputs': ['z527', 'z526'], 'layer': 260, 'fanin': 2, 'num': 1, 'output': 'z529', 'type': 'AND'}
+{'inputs': ['z529'], 'layer': 261, 'fanin': 1, 'num': 0, 'output': 'z530', 'type': 'NOT'}
+{'inputs': ['z528', 'z529'], 'layer': 261, 'fanin': 2, 'num': 1, 'output': 'z531', 'type': 'AND'}
+{'inputs': ['z531', 'z530'], 'layer': 262, 'fanin': 2, 'num': 0, 'output': 'z532', 'type': 'AND'}
+{'inputs': ['z530', 'z531'], 'layer': 262, 'fanin': 2, 'num': 1, 'output': 'z533', 'type': 'AND'}
+{'inputs': ['z533', 'z532'], 'layer': 263, 'fanin': 2, 'num': 0, 'output': 'z534', 'type': 'AND'}
+{'inputs': ['z532', 'z533'], 'layer': 263, 'fanin': 2, 'num': 1, 'output': 'z535', 'type': 'OR'}
+{'inputs': ['z534', 'z535'], 'layer': 264, 'fanin': 2, 'num': 0, 'output': 'z536', 'type': 'OR'}
+{'inputs': ['z535'], 'layer': 264, 'fanin': 1, 'num': 1, 'output': 'z537', 'type': 'NOT'}
+{'inputs': ['z536', 'z537'], 'layer': 265, 'fanin': 2, 'num': 0, 'output': 'z538', 'type': 'AND'}
+{'inputs': ['z536', 'z537'], 'layer': 265, 'fanin': 2, 'num': 1, 'output': 'z539', 'type': 'AND'}
+{'inputs': ['z538'], 'layer': 266, 'fanin': 1, 'num': 0, 'output': 'z540', 'type': 'NOT'}
+{'inputs': ['z539', 'z538'], 'layer': 266, 'fanin': 2, 'num': 1, 'output': 'z541', 'type': 'AND'}
+{'inputs': ['z541'], 'layer': 267, 'fanin': 1, 'num': 0, 'output': 'z542', 'type': 'NOT'}
+{'inputs': ['z541'], 'layer': 267, 'fanin': 1, 'num': 1, 'output': 'z543', 'type': 'NOT'}
+{'inputs': ['z543', 'z542'], 'layer': 268, 'fanin': 2, 'num': 0, 'output': 'z544', 'type': 'AND'}
+{'inputs': ['z542', 'z543'], 'layer': 268, 'fanin': 2, 'num': 1, 'output': 'z545', 'type': 'AND'}
+{'inputs': ['z545'], 'layer': 269, 'fanin': 1, 'num': 0, 'output': 'z546', 'type': 'NOT'}
+{'inputs': ['z545', 'z544'], 'layer': 269, 'fanin': 2, 'num': 1, 'output': 'z547', 'type': 'OR'}
+{'inputs': ['z546', 'z547'], 'layer': 270, 'fanin': 2, 'num': 0, 'output': 'z548', 'type': 'OR'}
+{'inputs': ['z546', 'z547'], 'layer': 270, 'fanin': 2, 'num': 1, 'output': 'z549', 'type': 'AND'}
+{'inputs': ['z548'], 'layer': 271, 'fanin': 1, 'num': 0, 'output': 'z550', 'type': 'NOT'}
+{'inputs': ['z549', 'z548'], 'layer': 271, 'fanin': 2, 'num': 1, 'output': 'z551', 'type': 'AND'}
+{'inputs': ['z550', 'z551'], 'layer': 272, 'fanin': 2, 'num': 0, 'output': 'z552', 'type': 'AND'}
+{'inputs': ['z550'], 'layer': 272, 'fanin': 1, 'num': 1, 'output': 'z553', 'type': 'NOT'}
+{'inputs': ['z553', 'z552'], 'layer': 273, 'fanin': 2, 'num': 0, 'output': 'z554', 'type': 'AND'}
+{'inputs': ['z552', 'z553'], 'layer': 273, 'fanin': 2, 'num': 1, 'output': 'z555', 'type': 'OR'}
+{'inputs': ['z555', 'z554'], 'layer': 274, 'fanin': 2, 'num': 0, 'output': 'z556', 'type': 'AND'}
+{'inputs': ['z555', 'z554'], 'layer': 274, 'fanin': 2, 'num': 1, 'output': 'z557', 'type': 'AND'}
+{'inputs': ['z556'], 'layer': 275, 'fanin': 1, 'num': 0, 'output': 'z558', 'type': 'NOT'}
+{'inputs': ['z556', 'z557'], 'layer': 275, 'fanin': 2, 'num': 1, 'output': 'z559', 'type': 'OR'}
+{'inputs': ['z558', 'z559'], 'layer': 276, 'fanin': 2, 'num': 0, 'output': 'z560', 'type': 'AND'}
+{'inputs': ['z559', 'z558'], 'layer': 276, 'fanin': 2, 'num': 1, 'output': 'z561', 'type': 'OR'}
+{'inputs': ['z560'], 'layer': 277, 'fanin': 1, 'num': 0, 'output': 'z562', 'type': 'NOT'}
+{'inputs': ['z561', 'z560'], 'layer': 277, 'fanin': 2, 'num': 1, 'output': 'z563', 'type': 'AND'}
+{'inputs': ['z562', 'z563'], 'layer': 278, 'fanin': 2, 'num': 0, 'output': 'z564', 'type': 'AND'}
+{'inputs': ['z562'], 'layer': 278, 'fanin': 1, 'num': 1, 'output': 'z565', 'type': 'NOT'}
+{'inputs': ['z564', 'z565'], 'layer': 279, 'fanin': 2, 'num': 0, 'output': 'z566', 'type': 'AND'}
+{'inputs': ['z564', 'z565'], 'layer': 279, 'fanin': 2, 'num': 1, 'output': 'z567', 'type': 'AND'}
+{'inputs': ['z566'], 'layer': 280, 'fanin': 1, 'num': 0, 'output': 'z568', 'type': 'NOT'}
+{'inputs': ['z567', 'z566'], 'layer': 280, 'fanin': 2, 'num': 1, 'output': 'z569', 'type': 'OR'}
+{'inputs': ['z569', 'z568'], 'layer': 281, 'fanin': 2, 'num': 0, 'output': 'z570', 'type': 'OR'}
+{'inputs': ['z569', 'z568'], 'layer': 281, 'fanin': 2, 'num': 1, 'output': 'z571', 'type': 'OR'}
+{'inputs': ['z570', 'z571'], 'layer': 282, 'fanin': 2, 'num': 0, 'output': 'z572', 'type': 'AND'}
+{'inputs': ['z570', 'z571'], 'layer': 282, 'fanin': 2, 'num': 1, 'output': 'z573', 'type': 'AND'}
+{'inputs': ['z572', 'z573'], 'layer': 283, 'fanin': 2, 'num': 0, 'output': 'z574', 'type': 'OR'}
+{'inputs': ['z572'], 'layer': 283, 'fanin': 1, 'num': 1, 'output': 'z575', 'type': 'NOT'}
+{'inputs': ['z574'], 'layer': 284, 'fanin': 1, 'num': 0, 'output': 'z576', 'type': 'NOT'}
+{'inputs': ['z574', 'z575'], 'layer': 284, 'fanin': 2, 'num': 1, 'output': 'z577', 'type': 'OR'}
+{'inputs': ['z576'], 'layer': 285, 'fanin': 1, 'num': 0, 'output': 'z578', 'type': 'NOT'}
+{'inputs': ['z577'], 'layer': 285, 'fanin': 1, 'num': 1, 'output': 'z579', 'type': 'NOT'}
+{'inputs': ['z579'], 'layer': 286, 'fanin': 1, 'num': 0, 'output': 'z580', 'type': 'NOT'}
+{'inputs': ['z578', 'z579'], 'layer': 286, 'fanin': 2, 'num': 1, 'output': 'z581', 'type': 'AND'}
+{'inputs': ['z581', 'z580'], 'layer': 287, 'fanin': 2, 'num': 0, 'output': 'z582', 'type': 'OR'}
+{'inputs': ['z580'], 'layer': 287, 'fanin': 1, 'num': 1, 'output': 'z583', 'type': 'NOT'}
+{'inputs': ['z583', 'z582'], 'layer': 288, 'fanin': 2, 'num': 0, 'output': 'z584', 'type': 'OR'}
+{'inputs': ['z583', 'z582'], 'layer': 288, 'fanin': 2, 'num': 1, 'output': 'z585', 'type': 'OR'}
+{'inputs': ['z585', 'z584'], 'layer': 289, 'fanin': 2, 'num': 0, 'output': 'z586', 'type': 'AND'}
+{'inputs': ['z585', 'z584'], 'layer': 289, 'fanin': 2, 'num': 1, 'output': 'z587', 'type': 'AND'}
+{'inputs': ['z586', 'z587'], 'layer': 290, 'fanin': 2, 'num': 0, 'output': 'z588', 'type': 'AND'}
+{'inputs': ['z587'], 'layer': 290, 'fanin': 1, 'num': 1, 'output': 'z589', 'type': 'NOT'}
+{'inputs': ['z588', 'z589'], 'layer': 291, 'fanin': 2, 'num': 0, 'output': 'z590', 'type': 'AND'}
+{'inputs': ['z588', 'z589'], 'layer': 291, 'fanin': 2, 'num': 1, 'output': 'z591', 'type': 'AND'}
+{'inputs': ['z590', 'z591'], 'layer': 292, 'fanin': 2, 'num': 0, 'output': 'z592', 'type': 'OR'}
+{'inputs': ['z590', 'z591'], 'layer': 292, 'fanin': 2, 'num': 1, 'output': 'z593', 'type': 'OR'}
+{'inputs': ['z593', 'z592'], 'layer': 293, 'fanin': 2, 'num': 0, 'output': 'z594', 'type': 'AND'}
+{'inputs': ['z593', 'z592'], 'layer': 293, 'fanin': 2, 'num': 1, 'output': 'z595', 'type': 'AND'}
+{'inputs': ['z595'], 'layer': 294, 'fanin': 1, 'num': 0, 'output': 'z596', 'type': 'NOT'}
+{'inputs': ['z594', 'z595'], 'layer': 294, 'fanin': 2, 'num': 1, 'output': 'z597', 'type': 'OR'}
+{'inputs': ['z596', 'z597'], 'layer': 295, 'fanin': 2, 'num': 0, 'output': 'z598', 'type': 'AND'}
+{'inputs': ['z596', 'z597'], 'layer': 295, 'fanin': 2, 'num': 1, 'output': 'z599', 'type': 'OR'}
+{'inputs': ['z598', 'z599'], 'layer': 296, 'fanin': 2, 'num': 0, 'output': 'z600', 'type': 'OR'}
+{'inputs': ['z598', 'z599'], 'layer': 296, 'fanin': 2, 'num': 1, 'output': 'z601', 'type': 'OR'}
+{'inputs': ['z601', 'z600'], 'layer': 297, 'fanin': 2, 'num': 0, 'output': 'z602', 'type': 'AND'}
+{'inputs': ['z600', 'z601'], 'layer': 297, 'fanin': 2, 'num': 1, 'output': 'z603', 'type': 'AND'}
+{'inputs': ['z602', 'z603'], 'layer': 298, 'fanin': 2, 'num': 0, 'output': 'z604', 'type': 'AND'}
+{'inputs': ['z602', 'z603'], 'layer': 298, 'fanin': 2, 'num': 1, 'output': 'z605', 'type': 'OR'}
+{'inputs': ['z604', 'z605'], 'layer': 299, 'fanin': 2, 'num': 0, 'output': 'z606', 'type': 'OR'}
+{'inputs': ['z605', 'z604'], 'layer': 299, 'fanin': 2, 'num': 1, 'output': 'z607', 'type': 'AND'}
+{'inputs': ['z606', 'z607'], 'layer': 300, 'fanin': 2, 'num': 0, 'output': 'z608', 'type': 'OR'}
+{'inputs': ['z607'], 'layer': 300, 'fanin': 1, 'num': 1, 'output': 'z609', 'type': 'NOT'}
+{'inputs': ['z609', 'z608'], 'layer': 301, 'fanin': 2, 'num': 0, 'output': 'z610', 'type': 'OR'}
+{'inputs': ['z609', 'z608'], 'layer': 301, 'fanin': 2, 'num': 1, 'output': 'z611', 'type': 'OR'}
+{'inputs': ['z611'], 'layer': 302, 'fanin': 1, 'num': 0, 'output': 'z612', 'type': 'NOT'}
+{'inputs': ['z610', 'z611'], 'layer': 302, 'fanin': 2, 'num': 1, 'output': 'z613', 'type': 'OR'}
+{'inputs': ['z613', 'z612'], 'layer': 303, 'fanin': 2, 'num': 0, 'output': 'z614', 'type': 'AND'}
+{'inputs': ['z612', 'z613'], 'layer': 303, 'fanin': 2, 'num': 1, 'output': 'z615', 'type': 'OR'}
+{'inputs': ['z614', 'z615'], 'layer': 304, 'fanin': 2, 'num': 0, 'output': 'z616', 'type': 'OR'}
+{'inputs': ['z615'], 'layer': 304, 'fanin': 1, 'num': 1, 'output': 'z617', 'type': 'NOT'}
+{'inputs': ['z616', 'z617'], 'layer': 305, 'fanin': 2, 'num': 0, 'output': 'z618', 'type': 'AND'}
+{'inputs': ['z616', 'z617'], 'layer': 305, 'fanin': 2, 'num': 1, 'output': 'z619', 'type': 'OR'}
+{'inputs': ['z619', 'z618'], 'layer': 306, 'fanin': 2, 'num': 0, 'output': 'z620', 'type': 'OR'}
+{'inputs': ['z618', 'z619'], 'layer': 306, 'fanin': 2, 'num': 1, 'output': 'z621', 'type': 'AND'}
+{'inputs': ['z621'], 'layer': 307, 'fanin': 1, 'num': 0, 'output': 'z622', 'type': 'NOT'}
+{'inputs': ['z620', 'z621'], 'layer': 307, 'fanin': 2, 'num': 1, 'output': 'z623', 'type': 'AND'}
+{'inputs': ['z622'], 'layer': 308, 'fanin': 1, 'num': 0, 'output': 'z624', 'type': 'NOT'}
+{'inputs': ['z622', 'z623'], 'layer': 308, 'fanin': 2, 'num': 1, 'output': 'z625', 'type': 'AND'}
+{'inputs': ['z624', 'z625'], 'layer': 309, 'fanin': 2, 'num': 0, 'output': 'z626', 'type': 'AND'}
+{'inputs': ['z625', 'z624'], 'layer': 309, 'fanin': 2, 'num': 1, 'output': 'z627', 'type': 'AND'}
+{'inputs': ['z627'], 'layer': 310, 'fanin': 1, 'num': 0, 'output': 'z628', 'type': 'NOT'}
+{'inputs': ['z627'], 'layer': 310, 'fanin': 1, 'num': 1, 'output': 'z629', 'type': 'NOT'}
+{'inputs': ['z629'], 'layer': 311, 'fanin': 1, 'num': 0, 'output': 'z630', 'type': 'NOT'}
+{'inputs': ['z629', 'z628'], 'layer': 311, 'fanin': 2, 'num': 1, 'output': 'z631', 'type': 'OR'}
+{'inputs': ['z631', 'z630'], 'layer': 312, 'fanin': 2, 'num': 0, 'output': 'z632', 'type': 'OR'}
+{'inputs': ['z630', 'z631'], 'layer': 312, 'fanin': 2, 'num': 1, 'output': 'z633', 'type': 'AND'}
+{'inputs': ['z632'], 'layer': 313, 'fanin': 1, 'num': 0, 'output': 'z634', 'type': 'NOT'}
+{'inputs': ['z632', 'z633'], 'layer': 313, 'fanin': 2, 'num': 1, 'output': 'z635', 'type': 'OR'}
+{'inputs': ['z635', 'z634'], 'layer': 314, 'fanin': 2, 'num': 0, 'output': 'z636', 'type': 'OR'}
+{'inputs': ['z634', 'z635'], 'layer': 314, 'fanin': 2, 'num': 1, 'output': 'z637', 'type': 'AND'}
+{'inputs': ['z637', 'z636'], 'layer': 315, 'fanin': 2, 'num': 0, 'output': 'z638', 'type': 'AND'}
+{'inputs': ['z636'], 'layer': 315, 'fanin': 1, 'num': 1, 'output': 'z639', 'type': 'NOT'}
+{'inputs': ['z638'], 'layer': 316, 'fanin': 1, 'num': 0, 'output': 'z640', 'type': 'NOT'}
+{'inputs': ['z638'], 'layer': 316, 'fanin': 1, 'num': 1, 'output': 'z641', 'type': 'NOT'}
+{'inputs': ['z640', 'z641'], 'layer': 317, 'fanin': 2, 'num': 0, 'output': 'z642', 'type': 'AND'}
+{'inputs': ['z641'], 'layer': 317, 'fanin': 1, 'num': 1, 'output': 'z643', 'type': 'NOT'}
+{'inputs': ['z642'], 'layer': 318, 'fanin': 1, 'num': 0, 'output': 'z644', 'type': 'NOT'}
+{'inputs': ['z642'], 'layer': 318, 'fanin': 1, 'num': 1, 'output': 'z645', 'type': 'NOT'}
+{'inputs': ['z644'], 'layer': 319, 'fanin': 1, 'num': 0, 'output': 'z646', 'type': 'NOT'}
+{'inputs': ['z644', 'z645'], 'layer': 319, 'fanin': 2, 'num': 1, 'output': 'z647', 'type': 'AND'}
+{'inputs': ['z647', 'z646'], 'layer': 320, 'fanin': 2, 'num': 0, 'output': 'z648', 'type': 'AND'}
+{'inputs': ['z647', 'z646'], 'layer': 320, 'fanin': 2, 'num': 1, 'output': 'z649', 'type': 'AND'}
+{'inputs': ['z649', 'z648'], 'layer': 321, 'fanin': 2, 'num': 0, 'output': 'z650', 'type': 'OR'}
+{'inputs': ['z649'], 'layer': 321, 'fanin': 1, 'num': 1, 'output': 'z651', 'type': 'NOT'}
+{'inputs': ['z650', 'z651'], 'layer': 322, 'fanin': 2, 'num': 0, 'output': 'z652', 'type': 'AND'}
+{'inputs': ['z651'], 'layer': 322, 'fanin': 1, 'num': 1, 'output': 'z653', 'type': 'NOT'}
+{'inputs': ['z653'], 'layer': 323, 'fanin': 1, 'num': 0, 'output': 'z654', 'type': 'NOT'}
+{'inputs': ['z652'], 'layer': 323, 'fanin': 1, 'num': 1, 'output': 'z655', 'type': 'NOT'}
+{'inputs': ['z654', 'z655'], 'layer': 324, 'fanin': 2, 'num': 0, 'output': 'z656', 'type': 'AND'}
+{'inputs': ['z655'], 'layer': 324, 'fanin': 1, 'num': 1, 'output': 'z657', 'type': 'NOT'}
+{'inputs': ['z657', 'z656'], 'layer': 325, 'fanin': 2, 'num': 0, 'output': 'z658', 'type': 'AND'}
+{'inputs': ['z657', 'z656'], 'layer': 325, 'fanin': 2, 'num': 1, 'output': 'z659', 'type': 'AND'}
+{'inputs': ['z659', 'z658'], 'layer': 326, 'fanin': 2, 'num': 0, 'output': 'z660', 'type': 'AND'}
+{'inputs': ['z658', 'z659'], 'layer': 326, 'fanin': 2, 'num': 1, 'output': 'z661', 'type': 'AND'}
+{'inputs': ['z660'], 'layer': 327, 'fanin': 1, 'num': 0, 'output': 'z662', 'type': 'NOT'}
+{'inputs': ['z661', 'z660'], 'layer': 327, 'fanin': 2, 'num': 1, 'output': 'z663', 'type': 'OR'}
+{'inputs': ['z662'], 'layer': 328, 'fanin': 1, 'num': 0, 'output': 'z664', 'type': 'NOT'}
+{'inputs': ['z662'], 'layer': 328, 'fanin': 1, 'num': 1, 'output': 'z665', 'type': 'NOT'}
+{'inputs': ['z664', 'z665'], 'layer': 329, 'fanin': 2, 'num': 0, 'output': 'z666', 'type': 'AND'}
+{'inputs': ['z664'], 'layer': 329, 'fanin': 1, 'num': 1, 'output': 'z667', 'type': 'NOT'}
+{'inputs': ['z667', 'z666'], 'layer': 330, 'fanin': 2, 'num': 0, 'output': 'z668', 'type': 'OR'}
+{'inputs': ['z666'], 'layer': 330, 'fanin': 1, 'num': 1, 'output': 'z669', 'type': 'NOT'}
+{'inputs': ['z668'], 'layer': 331, 'fanin': 1, 'num': 0, 'output': 'z670', 'type': 'NOT'}
+{'inputs': ['z669', 'z668'], 'layer': 331, 'fanin': 2, 'num': 1, 'output': 'z671', 'type': 'OR'}
+{'inputs': ['z670', 'z671'], 'layer': 332, 'fanin': 2, 'num': 0, 'output': 'z672', 'type': 'AND'}
+{'inputs': ['z670', 'z671'], 'layer': 332, 'fanin': 2, 'num': 1, 'output': 'z673', 'type': 'AND'}
+{'inputs': ['z672', 'z673'], 'layer': 333, 'fanin': 2, 'num': 0, 'output': 'z674', 'type': 'AND'}
+{'inputs': ['z673'], 'layer': 333, 'fanin': 1, 'num': 1, 'output': 'z675', 'type': 'NOT'}
+{'inputs': ['z674', 'z675'], 'layer': 334, 'fanin': 2, 'num': 0, 'output': 'z676', 'type': 'OR'}
+{'inputs': ['z674', 'z675'], 'layer': 334, 'fanin': 2, 'num': 1, 'output': 'z677', 'type': 'AND'}
+{'inputs': ['z677', 'z676'], 'layer': 335, 'fanin': 2, 'num': 0, 'output': 'z678', 'type': 'OR'}
+{'inputs': ['z677', 'z676'], 'layer': 335, 'fanin': 2, 'num': 1, 'output': 'z679', 'type': 'OR'}
+{'inputs': ['z679', 'z678'], 'layer': 336, 'fanin': 2, 'num': 0, 'output': 'z680', 'type': 'AND'}
+{'inputs': ['z679', 'z678'], 'layer': 336, 'fanin': 2, 'num': 1, 'output': 'z681', 'type': 'OR'}
+{'inputs': ['z680', 'z681'], 'layer': 337, 'fanin': 2, 'num': 0, 'output': 'z682', 'type': 'OR'}
+{'inputs': ['z681', 'z680'], 'layer': 337, 'fanin': 2, 'num': 1, 'output': 'z683', 'type': 'AND'}
+{'inputs': ['z682'], 'layer': 338, 'fanin': 1, 'num': 0, 'output': 'z684', 'type': 'NOT'}
+{'inputs': ['z683', 'z682'], 'layer': 338, 'fanin': 2, 'num': 1, 'output': 'z685', 'type': 'AND'}
+{'inputs': ['z685', 'z684'], 'layer': 339, 'fanin': 2, 'num': 0, 'output': 'z686', 'type': 'OR'}
+{'inputs': ['z685', 'z684'], 'layer': 339, 'fanin': 2, 'num': 1, 'output': 'z687', 'type': 'AND'}
+{'inputs': ['z687'], 'layer': 340, 'fanin': 1, 'num': 0, 'output': 'z688', 'type': 'NOT'}
+{'inputs': ['z687', 'z686'], 'layer': 340, 'fanin': 2, 'num': 1, 'output': 'z689', 'type': 'AND'}
+{'inputs': ['z688'], 'layer': 341, 'fanin': 1, 'num': 0, 'output': 'z690', 'type': 'NOT'}
+{'inputs': ['z688', 'z689'], 'layer': 341, 'fanin': 2, 'num': 1, 'output': 'z691', 'type': 'OR'}
+{'inputs': ['z691', 'z690'], 'layer': 342, 'fanin': 2, 'num': 0, 'output': 'z692', 'type': 'AND'}
+{'inputs': ['z691', 'z690'], 'layer': 342, 'fanin': 2, 'num': 1, 'output': 'z693', 'type': 'AND'}
+{'inputs': ['z692', 'z693'], 'layer': 343, 'fanin': 2, 'num': 0, 'output': 'z694', 'type': 'OR'}
+{'inputs': ['z692'], 'layer': 343, 'fanin': 1, 'num': 1, 'output': 'z695', 'type': 'NOT'}
+{'inputs': ['z695', 'z694'], 'layer': 344, 'fanin': 2, 'num': 0, 'output': 'z696', 'type': 'OR'}
+{'inputs': ['z694', 'z695'], 'layer': 344, 'fanin': 2, 'num': 1, 'output': 'z697', 'type': 'OR'}
+{'inputs': ['z696', 'z697'], 'layer': 345, 'fanin': 2, 'num': 0, 'output': 'z698', 'type': 'OR'}
+{'inputs': ['z697'], 'layer': 345, 'fanin': 1, 'num': 1, 'output': 'z699', 'type': 'NOT'}
+{'inputs': ['z699'], 'layer': 346, 'fanin': 1, 'num': 0, 'output': 'z700', 'type': 'NOT'}
+{'inputs': ['z698'], 'layer': 346, 'fanin': 1, 'num': 1, 'output': 'z701', 'type': 'NOT'}
+{'inputs': ['z700', 'z701'], 'layer': 347, 'fanin': 2, 'num': 0, 'output': 'z702', 'type': 'OR'}
+{'inputs': ['z700', 'z701'], 'layer': 347, 'fanin': 2, 'num': 1, 'output': 'z703', 'type': 'OR'}
+{'inputs': ['z703'], 'layer': 348, 'fanin': 1, 'num': 0, 'output': 'z704', 'type': 'NOT'}
+{'inputs': ['z703', 'z702'], 'layer': 348, 'fanin': 2, 'num': 1, 'output': 'z705', 'type': 'OR'}
+{'inputs': ['z704', 'z705'], 'layer': 349, 'fanin': 2, 'num': 0, 'output': 'z706', 'type': 'AND'}
+{'inputs': ['z705'], 'layer': 349, 'fanin': 1, 'num': 1, 'output': 'z707', 'type': 'NOT'}
+{'inputs': ['z707', 'z706'], 'layer': 350, 'fanin': 2, 'num': 0, 'output': 'z708', 'type': 'AND'}
+{'inputs': ['z706'], 'layer': 350, 'fanin': 1, 'num': 1, 'output': 'z709', 'type': 'NOT'}
+{'inputs': ['z709', 'z708'], 'layer': 351, 'fanin': 2, 'num': 0, 'output': 'z710', 'type': 'AND'}
+{'inputs': ['z709'], 'layer': 351, 'fanin': 1, 'num': 1, 'output': 'z711', 'type': 'NOT'}
+{'inputs': ['z710', 'z711'], 'layer': 352, 'fanin': 2, 'num': 0, 'output': 'z712', 'type': 'AND'}
+{'inputs': ['z711'], 'layer': 352, 'fanin': 1, 'num': 1, 'output': 'z713', 'type': 'NOT'}
+{'inputs': ['z712'], 'layer': 353, 'fanin': 1, 'num': 0, 'output': 'z714', 'type': 'NOT'}
+{'inputs': ['z712', 'z713'], 'layer': 353, 'fanin': 2, 'num': 1, 'output': 'z715', 'type': 'AND'}
+{'inputs': ['z715', 'z714'], 'layer': 354, 'fanin': 2, 'num': 0, 'output': 'z716', 'type': 'OR'}
+{'inputs': ['z715', 'z714'], 'layer': 354, 'fanin': 2, 'num': 1, 'output': 'z717', 'type': 'OR'}
+{'inputs': ['z717', 'z716'], 'layer': 355, 'fanin': 2, 'num': 0, 'output': 'z718', 'type': 'AND'}
+{'inputs': ['z716', 'z717'], 'layer': 355, 'fanin': 2, 'num': 1, 'output': 'z719', 'type': 'OR'}
+{'inputs': ['z718', 'z719'], 'layer': 356, 'fanin': 2, 'num': 0, 'output': 'z720', 'type': 'OR'}
+{'inputs': ['z718'], 'layer': 356, 'fanin': 1, 'num': 1, 'output': 'z721', 'type': 'NOT'}
+{'inputs': ['z721', 'z720'], 'layer': 357, 'fanin': 2, 'num': 0, 'output': 'z722', 'type': 'AND'}
+{'inputs': ['z720'], 'layer': 357, 'fanin': 1, 'num': 1, 'output': 'z723', 'type': 'NOT'}
+{'inputs': ['z723', 'z722'], 'layer': 358, 'fanin': 2, 'num': 0, 'output': 'z724', 'type': 'AND'}
+{'inputs': ['z723', 'z722'], 'layer': 358, 'fanin': 2, 'num': 1, 'output': 'z725', 'type': 'AND'}
+{'inputs': ['z724'], 'layer': 359, 'fanin': 1, 'num': 0, 'output': 'z726', 'type': 'NOT'}
+{'inputs': ['z725', 'z724'], 'layer': 359, 'fanin': 2, 'num': 1, 'output': 'z727', 'type': 'OR'}
+{'inputs': ['z726', 'z727'], 'layer': 360, 'fanin': 2, 'num': 0, 'output': 'z728', 'type': 'AND'}
+{'inputs': ['z727', 'z726'], 'layer': 360, 'fanin': 2, 'num': 1, 'output': 'z729', 'type': 'OR'}
+{'inputs': ['z728', 'z729'], 'layer': 361, 'fanin': 2, 'num': 0, 'output': 'z730', 'type': 'AND'}
+{'inputs': ['z729'], 'layer': 361, 'fanin': 1, 'num': 1, 'output': 'z731', 'type': 'NOT'}
+{'inputs': ['z730'], 'layer': 362, 'fanin': 1, 'num': 0, 'output': 'z732', 'type': 'NOT'}
+{'inputs': ['z731', 'z730'], 'layer': 362, 'fanin': 2, 'num': 1, 'output': 'z733', 'type': 'AND'}
+{'inputs': ['z733', 'z732'], 'layer': 363, 'fanin': 2, 'num': 0, 'output': 'z734', 'type': 'AND'}
+{'inputs': ['z732', 'z733'], 'layer': 363, 'fanin': 2, 'num': 1, 'output': 'z735', 'type': 'AND'}
+{'inputs': ['z734', 'z735'], 'layer': 364, 'fanin': 2, 'num': 0, 'output': 'z736', 'type': 'AND'}
+{'inputs': ['z734'], 'layer': 364, 'fanin': 1, 'num': 1, 'output': 'z737', 'type': 'NOT'}
+{'inputs': ['z736'], 'layer': 365, 'fanin': 1, 'num': 0, 'output': 'z738', 'type': 'NOT'}
+{'inputs': ['z736', 'z737'], 'layer': 365, 'fanin': 2, 'num': 1, 'output': 'z739', 'type': 'OR'}
+{'inputs': ['z739', 'z738'], 'layer': 366, 'fanin': 2, 'num': 0, 'output': 'z740', 'type': 'OR'}
+{'inputs': ['z739'], 'layer': 366, 'fanin': 1, 'num': 1, 'output': 'z741', 'type': 'NOT'}
+{'inputs': ['z740', 'z741'], 'layer': 367, 'fanin': 2, 'num': 0, 'output': 'z742', 'type': 'OR'}
+{'inputs': ['z740', 'z741'], 'layer': 367, 'fanin': 2, 'num': 1, 'output': 'z743', 'type': 'OR'}
+{'inputs': ['z743'], 'layer': 368, 'fanin': 1, 'num': 0, 'output': 'z744', 'type': 'NOT'}
+{'inputs': ['z742', 'z743'], 'layer': 368, 'fanin': 2, 'num': 1, 'output': 'z745', 'type': 'AND'}
+{'inputs': ['z744', 'z745'], 'layer': 369, 'fanin': 2, 'num': 0, 'output': 'z746', 'type': 'OR'}
+{'inputs': ['z745'], 'layer': 369, 'fanin': 1, 'num': 1, 'output': 'z747', 'type': 'NOT'}
+{'inputs': ['z746', 'z747'], 'layer': 370, 'fanin': 2, 'num': 0, 'output': 'z748', 'type': 'OR'}
+{'inputs': ['z747'], 'layer': 370, 'fanin': 1, 'num': 1, 'output': 'z749', 'type': 'NOT'}
+{'inputs': ['z749', 'z748'], 'layer': 371, 'fanin': 2, 'num': 0, 'output': 'z750', 'type': 'OR'}
+{'inputs': ['z748', 'z749'], 'layer': 371, 'fanin': 2, 'num': 1, 'output': 'z751', 'type': 'OR'}
+{'inputs': ['z751'], 'layer': 372, 'fanin': 1, 'num': 0, 'output': 'z752', 'type': 'NOT'}
+{'inputs': ['z751'], 'layer': 372, 'fanin': 1, 'num': 1, 'output': 'z753', 'type': 'NOT'}
+{'inputs': ['z752'], 'layer': 373, 'fanin': 1, 'num': 0, 'output': 'z754', 'type': 'NOT'}
+{'inputs': ['z753'], 'layer': 373, 'fanin': 1, 'num': 1, 'output': 'z755', 'type': 'NOT'}
+{'inputs': ['z754', 'z755'], 'layer': 374, 'fanin': 2, 'num': 0, 'output': 'z756', 'type': 'OR'}
+{'inputs': ['z754'], 'layer': 374, 'fanin': 1, 'num': 1, 'output': 'z757', 'type': 'NOT'}
+{'inputs': ['z757', 'z756'], 'layer': 375, 'fanin': 2, 'num': 0, 'output': 'z758', 'type': 'AND'}
+{'inputs': ['z756', 'z757'], 'layer': 375, 'fanin': 2, 'num': 1, 'output': 'z759', 'type': 'AND'}
+{'inputs': ['z759'], 'layer': 376, 'fanin': 1, 'num': 0, 'output': 'z760', 'type': 'NOT'}
+{'inputs': ['z759'], 'layer': 376, 'fanin': 1, 'num': 1, 'output': 'z761', 'type': 'NOT'}
+{'inputs': ['z761', 'z760'], 'layer': 377, 'fanin': 2, 'num': 0, 'output': 'z762', 'type': 'AND'}
+{'inputs': ['z761', 'z760'], 'layer': 377, 'fanin': 2, 'num': 1, 'output': 'z763', 'type': 'AND'}
+{'inputs': ['z763', 'z762'], 'layer': 378, 'fanin': 2, 'num': 0, 'output': 'z764', 'type': 'AND'}
+{'inputs': ['z763'], 'layer': 378, 'fanin': 1, 'num': 1, 'output': 'z765', 'type': 'NOT'}
+{'inputs': ['z764'], 'layer': 379, 'fanin': 1, 'num': 0, 'output': 'z766', 'type': 'NOT'}
+{'inputs': ['z765', 'z764'], 'layer': 379, 'fanin': 2, 'num': 1, 'output': 'z767', 'type': 'AND'}
+{'inputs': ['z766', 'z767'], 'layer': 380, 'fanin': 2, 'num': 0, 'output': 'z768', 'type': 'OR'}
+{'inputs': ['z767', 'z766'], 'layer': 380, 'fanin': 2, 'num': 1, 'output': 'z769', 'type': 'OR'}
+{'inputs': ['z769', 'z768'], 'layer': 381, 'fanin': 2, 'num': 0, 'output': 'z770', 'type': 'AND'}
+{'inputs': ['z769', 'z768'], 'layer': 381, 'fanin': 2, 'num': 1, 'output': 'z771', 'type': 'OR'}
+{'inputs': ['z770', 'z771'], 'layer': 382, 'fanin': 2, 'num': 0, 'output': 'z772', 'type': 'AND'}
+{'inputs': ['z771', 'z770'], 'layer': 382, 'fanin': 2, 'num': 1, 'output': 'z773', 'type': 'OR'}
+{'inputs': ['z772', 'z773'], 'layer': 383, 'fanin': 2, 'num': 0, 'output': 'z774', 'type': 'AND'}
+{'inputs': ['z772', 'z773'], 'layer': 383, 'fanin': 2, 'num': 1, 'output': 'z775', 'type': 'OR'}
+{'inputs': ['z775', 'z774'], 'layer': 384, 'fanin': 2, 'num': 0, 'output': 'z776', 'type': 'OR'}
+{'inputs': ['z775', 'z774'], 'layer': 384, 'fanin': 2, 'num': 1, 'output': 'z777', 'type': 'AND'}
+{'inputs': ['z777'], 'layer': 385, 'fanin': 1, 'num': 0, 'output': 'z778', 'type': 'NOT'}
+{'inputs': ['z776', 'z777'], 'layer': 385, 'fanin': 2, 'num': 1, 'output': 'z779', 'type': 'OR'}
+{'inputs': ['z778', 'z779'], 'layer': 386, 'fanin': 2, 'num': 0, 'output': 'z780', 'type': 'OR'}
+{'inputs': ['z779', 'z778'], 'layer': 386, 'fanin': 2, 'num': 1, 'output': 'z781', 'type': 'AND'}
+{'inputs': ['z780'], 'layer': 387, 'fanin': 1, 'num': 0, 'output': 'z782', 'type': 'NOT'}
+{'inputs': ['z781', 'z780'], 'layer': 387, 'fanin': 2, 'num': 1, 'output': 'z783', 'type': 'OR'}
+{'inputs': ['z782', 'z783'], 'layer': 388, 'fanin': 2, 'num': 0, 'output': 'z784', 'type': 'OR'}
+{'inputs': ['z782', 'z783'], 'layer': 388, 'fanin': 2, 'num': 1, 'output': 'z785', 'type': 'OR'}
+{'inputs': ['z785', 'z784'], 'layer': 389, 'fanin': 2, 'num': 0, 'output': 'z786', 'type': 'OR'}
+{'inputs': ['z785', 'z784'], 'layer': 389, 'fanin': 2, 'num': 1, 'output': 'z787', 'type': 'OR'}
+{'inputs': ['z787', 'z786'], 'layer': 390, 'fanin': 2, 'num': 0, 'output': 'z788', 'type': 'OR'}
+{'inputs': ['z786'], 'layer': 390, 'fanin': 1, 'num': 1, 'output': 'z789', 'type': 'NOT'}
+{'inputs': ['z788'], 'layer': 391, 'fanin': 1, 'num': 0, 'output': 'z790', 'type': 'NOT'}
+{'inputs': ['z789', 'z788'], 'layer': 391, 'fanin': 2, 'num': 1, 'output': 'z791', 'type': 'AND'}
+{'inputs': ['z790'], 'layer': 392, 'fanin': 1, 'num': 0, 'output': 'z792', 'type': 'NOT'}
+{'inputs': ['z791', 'z790'], 'layer': 392, 'fanin': 2, 'num': 1, 'output': 'z793', 'type': 'OR'}
+{'inputs': ['z793', 'z792'], 'layer': 393, 'fanin': 2, 'num': 0, 'output': 'z794', 'type': 'AND'}
+{'inputs': ['z793', 'z792'], 'layer': 393, 'fanin': 2, 'num': 1, 'output': 'z795', 'type': 'OR'}
+{'inputs': ['z794', 'z795'], 'layer': 394, 'fanin': 2, 'num': 0, 'output': 'z796', 'type': 'OR'}
+{'inputs': ['z794'], 'layer': 394, 'fanin': 1, 'num': 1, 'output': 'z797', 'type': 'NOT'}
+{'inputs': ['z796', 'z797'], 'layer': 395, 'fanin': 2, 'num': 0, 'output': 'z798', 'type': 'OR'}
+{'inputs': ['z797', 'z796'], 'layer': 395, 'fanin': 2, 'num': 1, 'output': 'z799', 'type': 'AND'}
+{'inputs': ['z798', 'z799'], 'layer': 396, 'fanin': 2, 'num': 0, 'output': 'z800', 'type': 'OR'}
+{'inputs': ['z799', 'z798'], 'layer': 396, 'fanin': 2, 'num': 1, 'output': 'z801', 'type': 'OR'}
+{'inputs': ['z800'], 'layer': 397, 'fanin': 1, 'num': 0, 'output': 'z802', 'type': 'NOT'}
+{'inputs': ['z801'], 'layer': 397, 'fanin': 1, 'num': 1, 'output': 'z803', 'type': 'NOT'}
+{'inputs': ['z803', 'z802'], 'layer': 398, 'fanin': 2, 'num': 0, 'output': 'z804', 'type': 'AND'}
+{'inputs': ['z802', 'z803'], 'layer': 398, 'fanin': 2, 'num': 1, 'output': 'z805', 'type': 'OR'}
+{'inputs': ['z805'], 'layer': 399, 'fanin': 1, 'num': 0, 'output': 'z806', 'type': 'NOT'}
+{'inputs': ['z805'], 'layer': 399, 'fanin': 1, 'num': 1, 'output': 'z807', 'type': 'NOT'}
+{'inputs': ['z807'], 'layer': 400, 'fanin': 1, 'num': 0, 'output': 'z808', 'type': 'NOT'}
+{'inputs': ['z807', 'z806'], 'layer': 400, 'fanin': 2, 'num': 1, 'output': 'z809', 'type': 'AND'}
+{'inputs': ['z808', 'z809'], 'layer': 401, 'fanin': 2, 'num': 0, 'output': 'z810', 'type': 'OR'}
+{'inputs': ['z808', 'z809'], 'layer': 401, 'fanin': 2, 'num': 1, 'output': 'z811', 'type': 'AND'}
+{'inputs': ['z811', 'z810'], 'layer': 402, 'fanin': 2, 'num': 0, 'output': 'z812', 'type': 'OR'}
+{'inputs': ['z811', 'z810'], 'layer': 402, 'fanin': 2, 'num': 1, 'output': 'z813', 'type': 'OR'}
+{'inputs': ['z813'], 'layer': 403, 'fanin': 1, 'num': 0, 'output': 'z814', 'type': 'NOT'}
+{'inputs': ['z813', 'z812'], 'layer': 403, 'fanin': 2, 'num': 1, 'output': 'z815', 'type': 'AND'}
+{'inputs': ['z815', 'z814'], 'layer': 404, 'fanin': 2, 'num': 0, 'output': 'z816', 'type': 'AND'}
+{'inputs': ['z815', 'z814'], 'layer': 404, 'fanin': 2, 'num': 1, 'output': 'z817', 'type': 'OR'}
+{'inputs': ['z817'], 'layer': 405, 'fanin': 1, 'num': 0, 'output': 'z818', 'type': 'NOT'}
+{'inputs': ['z816', 'z817'], 'layer': 405, 'fanin': 2, 'num': 1, 'output': 'z819', 'type': 'OR'}
+{'inputs': ['z818'], 'layer': 406, 'fanin': 1, 'num': 0, 'output': 'z820', 'type': 'NOT'}
+{'inputs': ['z818', 'z819'], 'layer': 406, 'fanin': 2, 'num': 1, 'output': 'z821', 'type': 'OR'}
+{'inputs': ['z821', 'z820'], 'layer': 407, 'fanin': 2, 'num': 0, 'output': 'z822', 'type': 'AND'}
+{'inputs': ['z821', 'z820'], 'layer': 407, 'fanin': 2, 'num': 1, 'output': 'z823', 'type': 'OR'}
+{'inputs': ['z823', 'z822'], 'layer': 408, 'fanin': 2, 'num': 0, 'output': 'z824', 'type': 'OR'}
+{'inputs': ['z822', 'z823'], 'layer': 408, 'fanin': 2, 'num': 1, 'output': 'z825', 'type': 'OR'}
+{'inputs': ['z824', 'z825'], 'layer': 409, 'fanin': 2, 'num': 0, 'output': 'z826', 'type': 'AND'}
+{'inputs': ['z825', 'z824'], 'layer': 409, 'fanin': 2, 'num': 1, 'output': 'z827', 'type': 'OR'}
+{'inputs': ['z827', 'z826'], 'layer': 410, 'fanin': 2, 'num': 0, 'output': 'z828', 'type': 'AND'}
+{'inputs': ['z826'], 'layer': 410, 'fanin': 1, 'num': 1, 'output': 'z829', 'type': 'NOT'}
+{'inputs': ['z828', 'z829'], 'layer': 411, 'fanin': 2, 'num': 0, 'output': 'z830', 'type': 'AND'}
+{'inputs': ['z829'], 'layer': 411, 'fanin': 1, 'num': 1, 'output': 'z831', 'type': 'NOT'}
+{'inputs': ['z831', 'z830'], 'layer': 412, 'fanin': 2, 'num': 0, 'output': 'z832', 'type': 'AND'}
+{'inputs': ['z831', 'z830'], 'layer': 412, 'fanin': 2, 'num': 1, 'output': 'z833', 'type': 'OR'}
+{'inputs': ['z833'], 'layer': 413, 'fanin': 1, 'num': 0, 'output': 'z834', 'type': 'NOT'}
+{'inputs': ['z832'], 'layer': 413, 'fanin': 1, 'num': 1, 'output': 'z835', 'type': 'NOT'}
+{'inputs': ['z834', 'z835'], 'layer': 414, 'fanin': 2, 'num': 0, 'output': 'z836', 'type': 'AND'}
+{'inputs': ['z834', 'z835'], 'layer': 414, 'fanin': 2, 'num': 1, 'output': 'z837', 'type': 'AND'}
+{'inputs': ['z836'], 'layer': 415, 'fanin': 1, 'num': 0, 'output': 'z838', 'type': 'NOT'}
+{'inputs': ['z836', 'z837'], 'layer': 415, 'fanin': 2, 'num': 1, 'output': 'z839', 'type': 'AND'}
+{'inputs': ['z839', 'z838'], 'layer': 416, 'fanin': 2, 'num': 0, 'output': 'z840', 'type': 'AND'}
+{'inputs': ['z839', 'z838'], 'layer': 416, 'fanin': 2, 'num': 1, 'output': 'z841', 'type': 'AND'}
+{'inputs': ['z841'], 'layer': 417, 'fanin': 1, 'num': 0, 'output': 'z842', 'type': 'NOT'}
+{'inputs': ['z840', 'z841'], 'layer': 417, 'fanin': 2, 'num': 1, 'output': 'z843', 'type': 'AND'}
+{'inputs': ['z843', 'z842'], 'layer': 418, 'fanin': 2, 'num': 0, 'output': 'z844', 'type': 'AND'}
+{'inputs': ['z842'], 'layer': 418, 'fanin': 1, 'num': 1, 'output': 'z845', 'type': 'NOT'}
+{'inputs': ['z845', 'z844'], 'layer': 419, 'fanin': 2, 'num': 0, 'output': 'z846', 'type': 'OR'}
+{'inputs': ['z844', 'z845'], 'layer': 419, 'fanin': 2, 'num': 1, 'output': 'z847', 'type': 'AND'}
+{'inputs': ['z847', 'z846'], 'layer': 420, 'fanin': 2, 'num': 0, 'output': 'z848', 'type': 'AND'}
+{'inputs': ['z846', 'z847'], 'layer': 420, 'fanin': 2, 'num': 1, 'output': 'z849', 'type': 'OR'}
+{'inputs': ['z849', 'z848'], 'layer': 421, 'fanin': 2, 'num': 0, 'output': 'z850', 'type': 'AND'}
+{'inputs': ['z849', 'z848'], 'layer': 421, 'fanin': 2, 'num': 1, 'output': 'z851', 'type': 'OR'}
+{'inputs': ['z850', 'z851'], 'layer': 422, 'fanin': 2, 'num': 0, 'output': 'z852', 'type': 'OR'}
+{'inputs': ['z851', 'z850'], 'layer': 422, 'fanin': 2, 'num': 1, 'output': 'z853', 'type': 'AND'}
+{'inputs': ['z853', 'z852'], 'layer': 423, 'fanin': 2, 'num': 0, 'output': 'z854', 'type': 'AND'}
+{'inputs': ['z852', 'z853'], 'layer': 423, 'fanin': 2, 'num': 1, 'output': 'z855', 'type': 'OR'}
+{'inputs': ['z854', 'z855'], 'layer': 424, 'fanin': 2, 'num': 0, 'output': 'z856', 'type': 'OR'}
+{'inputs': ['z855'], 'layer': 424, 'fanin': 1, 'num': 1, 'output': 'z857', 'type': 'NOT'}
+{'inputs': ['z856', 'z857'], 'layer': 425, 'fanin': 2, 'num': 0, 'output': 'z858', 'type': 'OR'}
+{'inputs': ['z857'], 'layer': 425, 'fanin': 1, 'num': 1, 'output': 'z859', 'type': 'NOT'}
+{'inputs': ['z858'], 'layer': 426, 'fanin': 1, 'num': 0, 'output': 'z860', 'type': 'NOT'}
+{'inputs': ['z858', 'z859'], 'layer': 426, 'fanin': 2, 'num': 1, 'output': 'z861', 'type': 'OR'}
+{'inputs': ['z860', 'z861'], 'layer': 427, 'fanin': 2, 'num': 0, 'output': 'z862', 'type': 'AND'}
+{'inputs': ['z860'], 'layer': 427, 'fanin': 1, 'num': 1, 'output': 'z863', 'type': 'NOT'}
+{'inputs': ['z862'], 'layer': 428, 'fanin': 1, 'num': 0, 'output': 'z864', 'type': 'NOT'}
+{'inputs': ['z862', 'z863'], 'layer': 428, 'fanin': 2, 'num': 1, 'output': 'z865', 'type': 'OR'}
+{'inputs': ['z864', 'z865'], 'layer': 429, 'fanin': 2, 'num': 0, 'output': 'z866', 'type': 'AND'}
+{'inputs': ['z864'], 'layer': 429, 'fanin': 1, 'num': 1, 'output': 'z867', 'type': 'NOT'}
+{'inputs': ['z867'], 'layer': 430, 'fanin': 1, 'num': 0, 'output': 'z868', 'type': 'NOT'}
+{'inputs': ['z866', 'z867'], 'layer': 430, 'fanin': 2, 'num': 1, 'output': 'z869', 'type': 'OR'}
+{'inputs': ['z868', 'z869'], 'layer': 431, 'fanin': 2, 'num': 0, 'output': 'z870', 'type': 'AND'}
+{'inputs': ['z869', 'z868'], 'layer': 431, 'fanin': 2, 'num': 1, 'output': 'z871', 'type': 'AND'}
+{'inputs': ['z871'], 'layer': 432, 'fanin': 1, 'num': 0, 'output': 'z872', 'type': 'NOT'}
+{'inputs': ['z871'], 'layer': 432, 'fanin': 1, 'num': 1, 'output': 'z873', 'type': 'NOT'}
+{'inputs': ['z872', 'z873'], 'layer': 433, 'fanin': 2, 'num': 0, 'output': 'z874', 'type': 'AND'}
+{'inputs': ['z873', 'z872'], 'layer': 433, 'fanin': 2, 'num': 1, 'output': 'z875', 'type': 'OR'}
+{'inputs': ['z874', 'z875'], 'layer': 434, 'fanin': 2, 'num': 0, 'output': 'z876', 'type': 'AND'}
+{'inputs': ['z875', 'z874'], 'layer': 434, 'fanin': 2, 'num': 1, 'output': 'z877', 'type': 'AND'}
+{'inputs': ['z877'], 'layer': 435, 'fanin': 1, 'num': 0, 'output': 'z878', 'type': 'NOT'}
+{'inputs': ['z877', 'z876'], 'layer': 435, 'fanin': 2, 'num': 1, 'output': 'z879', 'type': 'AND'}
+{'inputs': ['z878', 'z879'], 'layer': 436, 'fanin': 2, 'num': 0, 'output': 'z880', 'type': 'OR'}
+{'inputs': ['z878', 'z879'], 'layer': 436, 'fanin': 2, 'num': 1, 'output': 'z881', 'type': 'OR'}
+{'inputs': ['z880', 'z881'], 'layer': 437, 'fanin': 2, 'num': 0, 'output': 'z882', 'type': 'AND'}
+{'inputs': ['z880'], 'layer': 437, 'fanin': 1, 'num': 1, 'output': 'z883', 'type': 'NOT'}
+{'inputs': ['z882', 'z883'], 'layer': 438, 'fanin': 2, 'num': 0, 'output': 'z884', 'type': 'AND'}
+{'inputs': ['z883', 'z882'], 'layer': 438, 'fanin': 2, 'num': 1, 'output': 'z885', 'type': 'AND'}
+{'inputs': ['z884', 'z885'], 'layer': 439, 'fanin': 2, 'num': 0, 'output': 'z886', 'type': 'OR'}
+{'inputs': ['z885'], 'layer': 439, 'fanin': 1, 'num': 1, 'output': 'z887', 'type': 'NOT'}
+{'inputs': ['z886'], 'layer': 440, 'fanin': 1, 'num': 0, 'output': 'z888', 'type': 'NOT'}
+{'inputs': ['z886', 'z887'], 'layer': 440, 'fanin': 2, 'num': 1, 'output': 'z889', 'type': 'OR'}
+{'inputs': ['z889', 'z888'], 'layer': 441, 'fanin': 2, 'num': 0, 'output': 'z890', 'type': 'AND'}
+{'inputs': ['z888'], 'layer': 441, 'fanin': 1, 'num': 1, 'output': 'z891', 'type': 'NOT'}
+{'inputs': ['z890', 'z891'], 'layer': 442, 'fanin': 2, 'num': 0, 'output': 'z892', 'type': 'OR'}
+{'inputs': ['z890', 'z891'], 'layer': 442, 'fanin': 2, 'num': 1, 'output': 'z893', 'type': 'AND'}
+{'inputs': ['z892', 'z893'], 'layer': 443, 'fanin': 2, 'num': 0, 'output': 'z894', 'type': 'OR'}
+{'inputs': ['z892', 'z893'], 'layer': 443, 'fanin': 2, 'num': 1, 'output': 'z895', 'type': 'AND'}
+{'inputs': ['z895', 'z894'], 'layer': 444, 'fanin': 2, 'num': 0, 'output': 'z896', 'type': 'OR'}
+{'inputs': ['z895', 'z894'], 'layer': 444, 'fanin': 2, 'num': 1, 'output': 'z897', 'type': 'OR'}
+{'inputs': ['z896', 'z897'], 'layer': 445, 'fanin': 2, 'num': 0, 'output': 'z898', 'type': 'OR'}
+{'inputs': ['z897'], 'layer': 445, 'fanin': 1, 'num': 1, 'output': 'z899', 'type': 'NOT'}
+{'inputs': ['z898', 'z899'], 'layer': 446, 'fanin': 2, 'num': 0, 'output': 'z900', 'type': 'AND'}
+{'inputs': ['z898'], 'layer': 446, 'fanin': 1, 'num': 1, 'output': 'z901', 'type': 'NOT'}
+{'inputs': ['z901', 'z900'], 'layer': 447, 'fanin': 2, 'num': 0, 'output': 'z902', 'type': 'OR'}
+{'inputs': ['z901', 'z900'], 'layer': 447, 'fanin': 2, 'num': 1, 'output': 'z903', 'type': 'OR'}
+{'inputs': ['z902'], 'layer': 448, 'fanin': 1, 'num': 0, 'output': 'z904', 'type': 'NOT'}
+{'inputs': ['z903', 'z902'], 'layer': 448, 'fanin': 2, 'num': 1, 'output': 'z905', 'type': 'AND'}
+{'inputs': ['z905', 'z904'], 'layer': 449, 'fanin': 2, 'num': 0, 'output': 'z906', 'type': 'AND'}
+{'inputs': ['z904', 'z905'], 'layer': 449, 'fanin': 2, 'num': 1, 'output': 'z907', 'type': 'OR'}
+{'inputs': ['z906', 'z907'], 'layer': 450, 'fanin': 2, 'num': 0, 'output': 'z908', 'type': 'AND'}
+{'inputs': ['z906'], 'layer': 450, 'fanin': 1, 'num': 1, 'output': 'z909', 'type': 'NOT'}
+{'inputs': ['z908'], 'layer': 451, 'fanin': 1, 'num': 0, 'output': 'z910', 'type': 'NOT'}
+{'inputs': ['z909', 'z908'], 'layer': 451, 'fanin': 2, 'num': 1, 'output': 'z911', 'type': 'OR'}
+{'inputs': ['z910'], 'layer': 452, 'fanin': 1, 'num': 0, 'output': 'z912', 'type': 'NOT'}
+{'inputs': ['z911'], 'layer': 452, 'fanin': 1, 'num': 1, 'output': 'z913', 'type': 'NOT'}
+{'inputs': ['z913', 'z912'], 'layer': 453, 'fanin': 2, 'num': 0, 'output': 'z914', 'type': 'OR'}
+{'inputs': ['z913'], 'layer': 453, 'fanin': 1, 'num': 1, 'output': 'z915', 'type': 'NOT'}
+{'inputs': ['z915', 'z914'], 'layer': 454, 'fanin': 2, 'num': 0, 'output': 'z916', 'type': 'OR'}
+{'inputs': ['z914', 'z915'], 'layer': 454, 'fanin': 2, 'num': 1, 'output': 'z917', 'type': 'OR'}
+{'inputs': ['z917', 'z916'], 'layer': 455, 'fanin': 2, 'num': 0, 'output': 'z918', 'type': 'AND'}
+{'inputs': ['z917'], 'layer': 455, 'fanin': 1, 'num': 1, 'output': 'z919', 'type': 'NOT'}
+{'inputs': ['z918'], 'layer': 456, 'fanin': 1, 'num': 0, 'output': 'z920', 'type': 'NOT'}
+{'inputs': ['z919', 'z918'], 'layer': 456, 'fanin': 2, 'num': 1, 'output': 'z921', 'type': 'AND'}
+{'inputs': ['z921', 'z920'], 'layer': 457, 'fanin': 2, 'num': 0, 'output': 'z922', 'type': 'AND'}
+{'inputs': ['z921', 'z920'], 'layer': 457, 'fanin': 2, 'num': 1, 'output': 'z923', 'type': 'AND'}
+{'inputs': ['z923', 'z922'], 'layer': 458, 'fanin': 2, 'num': 0, 'output': 'z924', 'type': 'OR'}
+{'inputs': ['z923'], 'layer': 458, 'fanin': 1, 'num': 1, 'output': 'z925', 'type': 'NOT'}
+{'inputs': ['z924', 'z925'], 'layer': 459, 'fanin': 2, 'num': 0, 'output': 'z926', 'type': 'AND'}
+{'inputs': ['z925'], 'layer': 459, 'fanin': 1, 'num': 1, 'output': 'z927', 'type': 'NOT'}
+{'inputs': ['z926'], 'layer': 460, 'fanin': 1, 'num': 0, 'output': 'z928', 'type': 'NOT'}
+{'inputs': ['z927', 'z926'], 'layer': 460, 'fanin': 2, 'num': 1, 'output': 'z929', 'type': 'OR'}
+{'inputs': ['z928', 'z929'], 'layer': 461, 'fanin': 2, 'num': 0, 'output': 'z930', 'type': 'AND'}
+{'inputs': ['z929', 'z928'], 'layer': 461, 'fanin': 2, 'num': 1, 'output': 'z931', 'type': 'AND'}
+{'inputs': ['z931', 'z930'], 'layer': 462, 'fanin': 2, 'num': 0, 'output': 'z932', 'type': 'AND'}
+{'inputs': ['z930'], 'layer': 462, 'fanin': 1, 'num': 1, 'output': 'z933', 'type': 'NOT'}
+{'inputs': ['z933', 'z932'], 'layer': 463, 'fanin': 2, 'num': 0, 'output': 'z934', 'type': 'OR'}
+{'inputs': ['z932'], 'layer': 463, 'fanin': 1, 'num': 1, 'output': 'z935', 'type': 'NOT'}
+{'inputs': ['z934'], 'layer': 464, 'fanin': 1, 'num': 0, 'output': 'z936', 'type': 'NOT'}
+{'inputs': ['z935', 'z934'], 'layer': 464, 'fanin': 2, 'num': 1, 'output': 'z937', 'type': 'AND'}
+{'inputs': ['z936', 'z937'], 'layer': 465, 'fanin': 2, 'num': 0, 'output': 'z938', 'type': 'OR'}
+{'inputs': ['z937', 'z936'], 'layer': 465, 'fanin': 2, 'num': 1, 'output': 'z939', 'type': 'OR'}
+{'inputs': ['z939'], 'layer': 466, 'fanin': 1, 'num': 0, 'output': 'z940', 'type': 'NOT'}
+{'inputs': ['z938'], 'layer': 466, 'fanin': 1, 'num': 1, 'output': 'z941', 'type': 'NOT'}
+{'inputs': ['z941', 'z940'], 'layer': 467, 'fanin': 2, 'num': 0, 'output': 'z942', 'type': 'AND'}
+{'inputs': ['z941', 'z940'], 'layer': 467, 'fanin': 2, 'num': 1, 'output': 'z943', 'type': 'OR'}
+{'inputs': ['z943', 'z942'], 'layer': 468, 'fanin': 2, 'num': 0, 'output': 'z944', 'type': 'AND'}
+{'inputs': ['z942'], 'layer': 468, 'fanin': 1, 'num': 1, 'output': 'z945', 'type': 'NOT'}
+{'inputs': ['z944', 'z945'], 'layer': 469, 'fanin': 2, 'num': 0, 'output': 'z946', 'type': 'OR'}
+{'inputs': ['z945', 'z944'], 'layer': 469, 'fanin': 2, 'num': 1, 'output': 'z947', 'type': 'AND'}
+{'inputs': ['z947'], 'layer': 470, 'fanin': 1, 'num': 0, 'output': 'z948', 'type': 'NOT'}
+{'inputs': ['z947'], 'layer': 470, 'fanin': 1, 'num': 1, 'output': 'z949', 'type': 'NOT'}
+{'inputs': ['z948', 'z949'], 'layer': 471, 'fanin': 2, 'num': 0, 'output': 'z950', 'type': 'OR'}
+{'inputs': ['z948', 'z949'], 'layer': 471, 'fanin': 2, 'num': 1, 'output': 'z951', 'type': 'OR'}
+{'inputs': ['z950', 'z951'], 'layer': 472, 'fanin': 2, 'num': 0, 'output': 'z952', 'type': 'AND'}
+{'inputs': ['z951', 'z950'], 'layer': 472, 'fanin': 2, 'num': 1, 'output': 'z953', 'type': 'AND'}
+{'inputs': ['z952', 'z953'], 'layer': 473, 'fanin': 2, 'num': 0, 'output': 'z954', 'type': 'AND'}
+{'inputs': ['z953', 'z952'], 'layer': 473, 'fanin': 2, 'num': 1, 'output': 'z955', 'type': 'AND'}
+{'inputs': ['z955', 'z954'], 'layer': 474, 'fanin': 2, 'num': 0, 'output': 'z956', 'type': 'AND'}
+{'inputs': ['z954'], 'layer': 474, 'fanin': 1, 'num': 1, 'output': 'z957', 'type': 'NOT'}
+{'inputs': ['z957', 'z956'], 'layer': 475, 'fanin': 2, 'num': 0, 'output': 'z958', 'type': 'OR'}
+{'inputs': ['z956', 'z957'], 'layer': 475, 'fanin': 2, 'num': 1, 'output': 'z959', 'type': 'OR'}
+{'inputs': ['z958', 'z959'], 'layer': 476, 'fanin': 2, 'num': 0, 'output': 'z960', 'type': 'AND'}
+{'inputs': ['z959', 'z958'], 'layer': 476, 'fanin': 2, 'num': 1, 'output': 'z961', 'type': 'AND'}
+{'inputs': ['z960', 'z961'], 'layer': 477, 'fanin': 2, 'num': 0, 'output': 'z962', 'type': 'OR'}
+{'inputs': ['z960'], 'layer': 477, 'fanin': 1, 'num': 1, 'output': 'z963', 'type': 'NOT'}
+{'inputs': ['z963', 'z962'], 'layer': 478, 'fanin': 2, 'num': 0, 'output': 'z964', 'type': 'AND'}
+{'inputs': ['z962'], 'layer': 478, 'fanin': 1, 'num': 1, 'output': 'z965', 'type': 'NOT'}
+{'inputs': ['z965'], 'layer': 479, 'fanin': 1, 'num': 0, 'output': 'z966', 'type': 'NOT'}
+{'inputs': ['z965', 'z964'], 'layer': 479, 'fanin': 2, 'num': 1, 'output': 'z967', 'type': 'AND'}
+{'inputs': ['z967', 'z966'], 'layer': 480, 'fanin': 2, 'num': 0, 'output': 'z968', 'type': 'OR'}
+{'inputs': ['z967', 'z966'], 'layer': 480, 'fanin': 2, 'num': 1, 'output': 'z969', 'type': 'OR'}
+{'inputs': ['z968', 'z969'], 'layer': 481, 'fanin': 2, 'num': 0, 'output': 'z970', 'type': 'AND'}
+{'inputs': ['z969', 'z968'], 'layer': 481, 'fanin': 2, 'num': 1, 'output': 'z971', 'type': 'AND'}
+{'inputs': ['z971', 'z970'], 'layer': 482, 'fanin': 2, 'num': 0, 'output': 'z972', 'type': 'OR'}
+{'inputs': ['z971'], 'layer': 482, 'fanin': 1, 'num': 1, 'output': 'z973', 'type': 'NOT'}
+{'inputs': ['z972', 'z973'], 'layer': 483, 'fanin': 2, 'num': 0, 'output': 'z974', 'type': 'AND'}
+{'inputs': ['z972', 'z973'], 'layer': 483, 'fanin': 2, 'num': 1, 'output': 'z975', 'type': 'OR'}
+{'inputs': ['z974'], 'layer': 484, 'fanin': 1, 'num': 0, 'output': 'z976', 'type': 'NOT'}
+{'inputs': ['z974', 'z975'], 'layer': 484, 'fanin': 2, 'num': 1, 'output': 'z977', 'type': 'OR'}
+{'inputs': ['z976', 'z977'], 'layer': 485, 'fanin': 2, 'num': 0, 'output': 'z978', 'type': 'AND'}
+{'inputs': ['z976', 'z977'], 'layer': 485, 'fanin': 2, 'num': 1, 'output': 'z979', 'type': 'AND'}
+{'inputs': ['z979', 'z978'], 'layer': 486, 'fanin': 2, 'num': 0, 'output': 'z980', 'type': 'AND'}
+{'inputs': ['z978', 'z979'], 'layer': 486, 'fanin': 2, 'num': 1, 'output': 'z981', 'type': 'AND'}
+{'inputs': ['z981', 'z980'], 'layer': 487, 'fanin': 2, 'num': 0, 'output': 'z982', 'type': 'OR'}
+{'inputs': ['z981', 'z980'], 'layer': 487, 'fanin': 2, 'num': 1, 'output': 'z983', 'type': 'AND'}
+{'inputs': ['z983'], 'layer': 488, 'fanin': 1, 'num': 0, 'output': 'z984', 'type': 'NOT'}
+{'inputs': ['z982'], 'layer': 488, 'fanin': 1, 'num': 1, 'output': 'z985', 'type': 'NOT'}
+{'inputs': ['z984', 'z985'], 'layer': 489, 'fanin': 2, 'num': 0, 'output': 'z986', 'type': 'AND'}
+{'inputs': ['z985', 'z984'], 'layer': 489, 'fanin': 2, 'num': 1, 'output': 'z987', 'type': 'OR'}
+{'inputs': ['z987'], 'layer': 490, 'fanin': 1, 'num': 0, 'output': 'z988', 'type': 'NOT'}
+{'inputs': ['z987'], 'layer': 490, 'fanin': 1, 'num': 1, 'output': 'z989', 'type': 'NOT'}
+{'inputs': ['z988', 'z989'], 'layer': 491, 'fanin': 2, 'num': 0, 'output': 'z990', 'type': 'OR'}
+{'inputs': ['z989', 'z988'], 'layer': 491, 'fanin': 2, 'num': 1, 'output': 'z991', 'type': 'OR'}
+{'inputs': ['z991', 'z990'], 'layer': 492, 'fanin': 2, 'num': 0, 'output': 'z992', 'type': 'AND'}
+{'inputs': ['z990', 'z991'], 'layer': 492, 'fanin': 2, 'num': 1, 'output': 'z993', 'type': 'AND'}
+{'inputs': ['z993', 'z992'], 'layer': 493, 'fanin': 2, 'num': 0, 'output': 'z994', 'type': 'OR'}
+{'inputs': ['z993', 'z992'], 'layer': 493, 'fanin': 2, 'num': 1, 'output': 'z995', 'type': 'OR'}
+{'inputs': ['z994', 'z995'], 'layer': 494, 'fanin': 2, 'num': 0, 'output': 'z996', 'type': 'AND'}
+{'inputs': ['z995', 'z994'], 'layer': 494, 'fanin': 2, 'num': 1, 'output': 'z997', 'type': 'AND'}
+{'inputs': ['z997', 'z996'], 'layer': 495, 'fanin': 2, 'num': 0, 'output': 'z998', 'type': 'OR'}
+{'inputs': ['z996', 'z997'], 'layer': 495, 'fanin': 2, 'num': 1, 'output': 'z999', 'type': 'AND'}
+{'inputs': ['z998', 'z999'], 'layer': 496, 'fanin': 2, 'num': 0, 'output': 'z1000', 'type': 'OR'}
+{'inputs': ['z998'], 'layer': 496, 'fanin': 1, 'num': 1, 'output': 'z1001', 'type': 'NOT'}
+{'inputs': ['z1001', 'z1000'], 'layer': 497, 'fanin': 2, 'num': 0, 'output': 'z1002', 'type': 'AND'}
+{'inputs': ['z1001', 'z1000'], 'layer': 497, 'fanin': 2, 'num': 1, 'output': 'z1003', 'type': 'AND'}
+{'inputs': ['z1003', 'z1002'], 'layer': 498, 'fanin': 2, 'num': 0, 'output': 'z1004', 'type': 'AND'}
+{'inputs': ['z1003', 'z1002'], 'layer': 498, 'fanin': 2, 'num': 1, 'output': 'z1005', 'type': 'AND'}
+{'inputs': ['z1004', 'z1005'], 'layer': 499, 'fanin': 2, 'num': 0, 'output': 'z1006', 'type': 'OR'}
+{'inputs': ['z1006'], 'layer': 500, 'fanin': 2, 'num': 0, 'output': 'z1009', 'type': 'AND'}
