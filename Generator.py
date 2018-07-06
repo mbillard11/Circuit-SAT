@@ -17,8 +17,8 @@ class Generator:
         self.circuit = []
         self.outputs = []
         # -1 to allow for output gate zm
-        self.gatesPerLayer = (self.numGates) // (self.depth - 1)
-        self.gatesLastLayer = (self.numGates - 1) % (self.gatesPerLayer)
+        self.gatesPerLayer = (self.numGates - 1) // (self.depth - 1)
+        self.gatesLeftOver = (self.numGates - 1) % (self.depth - 1)
 
     # Make a list of all the possible outputs
     def outputList(self):
@@ -33,10 +33,16 @@ class Generator:
             gate = Gate(0, x, 'INPUT', 1, None, self.outputs[x])
             self.circuit.append(gate)
         # Generate each layer of the circuit
-        for x in range(1, self.depth - 1):
-            self.generateLayer(x)
+        if self.gatesLeftOver == 0:
+            for x in range(self.depth):
+                self.generateLayersB(x)
+        else:       
+            for x in range(1, self.gatesLeftOver + 1):
+                self.generateLayersA(x)
+            for x in range(self.gatesLeftOver + 1, self.depth):
+                self.generateLayersB(x)
         # Generate the last layer
-        self.generateLastLayer()
+        #self.generateLastLayer()
         # Generate the final output gate
         self.circuit.append(self.randOutGate())
         # Write the generated circuit to a file
@@ -45,7 +51,12 @@ class Generator:
             file.write(str(vars(y))+'\n')
         file.close()
 
-    def generateLayer(self, layer):
+    def generateLayersA(self, layer):
+        for x in range(self.gatesPerLayer + 1):
+            gate = self.randGate(layer, x)
+            self.circuit.append(gate)
+
+    def generateLayersB(self, layer):
         for x in range(self.gatesPerLayer):
             gate = self.randGate(layer, x)
             self.circuit.append(gate)
@@ -65,7 +76,10 @@ class Generator:
         gate = Gate(layer, num, gateType, None, None, None)
         gate.fanin = self.randFanin(gate.type)
         gate.inputs = self.randInputs(gate.layer, gate.fanin)
-        gate.output = self.outputs[self.numIn+(self.gatesPerLayer*(layer-1))+num]
+        if layer <= self.gatesLeftOver:
+            gate.output = self.outputs[self.numIn+((self.gatesPerLayer+1)*(layer-1))+num]
+        else:
+            gate.output = self.outputs[self.numIn+(self.gatesPerLayer*(layer-1))+num + self.gatesLeftOver]
         return gate
 
     # Generate a random gate for the final output
@@ -97,9 +111,11 @@ class Generator:
             choices = self.outputs[:self.numIn]
         # Layer at max depth (i.e. output gate) uses inputs from last "real" layer
         elif layer == self.depth:
-            choices = self.outputs[self.numIn + self.gatesPerLayer*(layer-2):self.numIn + self.gatesPerLayer*(layer-2)+ self.gatesLastLayer]
+            choices = self.outputs[self.numIn + self.gatesPerLayer*(layer-2) + self.gatesLeftOver:self.numIn + self.numGates - 1]
+        elif layer <= self.gatesLeftOver + 1:
+            choices = self.outputs[self.numIn + (self.gatesPerLayer+1)*(layer-2):self.numIn + (self.gatesPerLayer+1)*(layer-1)]
         else:
-            choices = self.outputs[self.numIn + self.gatesPerLayer*(layer-2):self.numIn + self.gatesPerLayer*(layer-1)]
+            choices = self.outputs[self.numIn + self.gatesPerLayer*(layer-2) + self.gatesLeftOver:self.numIn + self.gatesPerLayer*(layer-1) + self.gatesLeftOver]
         for x in range(fanin):
             if len(choices) == 0:
                 break
