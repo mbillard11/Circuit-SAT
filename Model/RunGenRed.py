@@ -19,12 +19,13 @@ def main():
     # m
     numGates = int(input('Enter the number of gates: '))
     # d
-    numDepth =  1000  #int(input('Enter the depth: '))
+    numDepth =  int(input('Enter the depth: '))
     # fanin
     faninMax = 2
     # Arrays for plotting graph
     nArr = []
     timeArr = []
+    satAvg = 0
 
     # Can change range and increments of n here
     for x in range(5,1001,50):
@@ -53,17 +54,21 @@ def main():
             avgTime += time
         satRatio = satSum / 10.00          
         avgTime /= 10.00
+        satAvg += satRatio
         timeArr.append(avgTime)
         nArr.append(x)
-        print('Sat Ratio={}'.format(satRatio))
+        print('SAT Ratio={}'.format(satAvg))
 
+    satAvg *= 5
+    print('SAT Percent: {}%'.format(satAvg))
     plt.title('Time to Solve vs. n', fontsize = 22)
 
-    plt.figtext(0.15,0.968,'Gates: {}'.format(numGates),bbox=dict(facecolor='blue', alpha=0.5))
-    plt.figtext(0.15,0.921,'Depth: {}'.format(numDepth),bbox=dict(facecolor='blue', alpha=0.5))
+    plt.figtext(0.15,0.85,'Gates: {}'.format(numGates),bbox=dict(facecolor='blue', alpha=0.5))
+    plt.figtext(0.15,0.8,'Depth: {}'.format(numDepth),bbox=dict(facecolor='blue', alpha=0.5))
+    plt.figtext(0.15,0.75,'{}% SAT'.format(satAvg),bbox=dict(facecolor='blue', alpha=0.5))
 
-    #plt.plot(np.unique(nArr), np.poly1d(np.polyfit(nArr, timeArr, 1))(np.unique(nArr)))
-    plt.plot(nArr,timeArr)
+    plt.plot(np.unique(nArr), np.poly1d(np.polyfit(nArr, timeArr, 2))(np.unique(nArr)))
+    plt.plot(nArr,timeArr,'ro')
     plt.xlabel('n')
     plt.ylabel('Time to Solve')
     plt.show()
