@@ -27,9 +27,9 @@ class Reducer:
     def gateCNF(self):
         for x in self.circuit[self.inputs:]:
             if x.type == 'AND':
-                self.andCNF(x)
+                self.newAndCNF(x)
             elif x.type == 'OR':
-                self.orCNF(x)
+                self.newOrCNF(x)
             elif x.type == 'NOT':
                 self.notCNF(x)
 
@@ -46,6 +46,23 @@ class Reducer:
         self.file.write('{} {} 0\n'.format(-out, inTwo))
         self.file.write('{} {} {} 0\n'.format(-inOne, -inTwo, out))
 
+    def newAndCNF(self, gate):
+        # [1:] because output is of the form 'z20'
+        # Add 1 because CNF starts at 1 not 0
+        out = int(gate.output[1:]) + 1
+
+        # Example gate.input = ['z6', 'z5', 'z13', 'z20']
+        inputArr = []
+        for x in gate.inputs:
+            curIn = int(x[1:]) + 1
+            inputArr.append(curIn)
+        for x in inputArr:
+            self.file.write('{} {} 0\n'.format(-out, x))
+        self.file.write('{} '.format(out))
+        for x in inputArr:
+            self.file.write('{} '.format(-x))
+        self.file.write('0\n')
+
     # CNF reduction of an OR gate
     def orCNF(self, gate):
         if len(gate.inputs) == 1:
@@ -58,6 +75,23 @@ class Reducer:
         self.file.write('{} {} {} 0\n'.format(-out, inOne, inTwo))
         self.file.write('{} {} 0\n'.format(-inOne, out))
         self.file.write('{} {} 0\n'.format(-inTwo, out))
+
+    def newOrCNF(self, gate):
+        # [1:] because output is of the form 'z20'
+        # Add 1 because CNF starts at 1 not 0
+        out = int(gate.output[1:]) + 1
+
+        # Example gate.input = ['z6', 'z5', 'z13', 'z20']
+        inputArr = []
+        for x in gate.inputs:
+            curIn = int(x[1:]) + 1
+            inputArr.append(curIn)
+        for x in inputArr:
+            self.file.write('{} {} 0\n'.format(out, -x))
+        self.file.write('{} '.format(-out))
+        for x in inputArr:
+            self.file.write('{} '.format(x))
+        self.file.write('0\n')
 
     # CNF reduction of a NOT gate
     def notCNF(self, gate):
@@ -73,7 +107,8 @@ class Reducer:
                 inputs += 1
             elif x.type == 'AND' or x.type == 'OR':
                 # AND and OR gates make up 3 clauses each
-                self.clauses += 3
+
+                self.clauses += len(x.inputs) + 1
             elif x.type == 'NOT':
                 # A NOT gate is made of 2 clauses
                 self.clauses += 2

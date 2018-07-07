@@ -5,6 +5,7 @@
 
 import math
 import random
+from numpy.random import choice
 from pprint import pprint
 
 class Generator:
@@ -73,7 +74,7 @@ class Generator:
 
     # Generate a random gate
     def randGate(self, layer, num):
-        gateType = random.choice(['AND','OR','NOT'])
+        gateType = choice(['AND','OR','NOT'], p = [0.25, 0.25, 0.5])
         gate = Gate(layer, num, gateType, None, None, None)
         gate.fanin = self.randFanin(gate.type)
         gate.inputs = self.randInputs(gate.layer, gate.fanin)
@@ -85,7 +86,7 @@ class Generator:
 
     # Generate a random gate for the final output
     def randOutGate(self):
-        gateType = random.choice(['AND','OR','NOT'])
+        gateType = choice(['AND','OR','NOT'], p = [0.3, 0.3, 0.4])
         gate = Gate(self.depth, 0, gateType, None, None, None)
         gate.fanin = self.randFanin(gate.type)
         gate.inputs = self.randInputs(gate.layer, gate.fanin)
@@ -100,8 +101,12 @@ class Generator:
             #fanin = random.randint(1,fanMax)
             fanin = 1
         else:
-            #fanin = random.randint(2,fanMax)
-            fanin = 2
+            if fanMax == 2:
+                fanin = 2
+            elif fanMax == 1:
+                fanin = 1
+            else:
+                fanin = random.randint(2,fanMax)
         return fanin
 
     # Randomly pick inputs from the previous layer
