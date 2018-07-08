@@ -1,5 +1,7 @@
 #!/usr/bin/python
-
+#
+# Author: Mitchell Billard
+#
 # A boolean circuit generator
 # This program has many parameters that can be experimented with and changed
 
@@ -74,6 +76,7 @@ class Generator:
 
     # Generate a random gate
     def randGate(self, layer, num):
+        # Twice as likely to choose NOT gate
         gateType = choice(['AND','OR','NOT'], p = [0.25, 0.25, 0.5])
         gate = Gate(layer, num, gateType, None, None, None)
         gate.fanin = self.randFanin(gate.type)

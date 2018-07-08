@@ -1,5 +1,7 @@
 #!/usr/bin/python
-
+#
+# Author: Mitchell Billard
+#
 # A boolean circuit reducer
 
 import math

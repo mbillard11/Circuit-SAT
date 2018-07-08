@@ -1,5 +1,7 @@
 #!/usr/bin/python
-
+#
+# Author: Mitchell Billard
+#
 # Run the Generator, Reducer, and Solver. Output results as a graph
 # The n, m, and d values can be changed
 
@@ -67,12 +69,11 @@ class RunGenRed:
 
         self.satAvg *= 5
         
+        # Print results to find interesting scenarios
         print('{:^10} {:^10} {:^10} {:^10} {:^10} {:^10.2}'.format(self.nStop - 1, self.numGates, self.numDepth, self.faninMax, int(self.satAvg), max(self.timeArr)))
-        #print('SAT Percent: {:.2f}%'.format(self.satAvg))
 
-        #print(self.timeArr)
-
-        #self.plotGraph()
+        # Uncomment to show graph
+        self.plotGraph()
 
     
     def plotGraph(self):
