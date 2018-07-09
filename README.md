@@ -16,4 +16,4 @@ A miniSAT solver using DIMACS must be already installed. We used the syrup solve
 The location of the file that the reducer opens must be changed to the input.cnf of your SAT solver (line 13 in Reducer.py). 
 
 ## Report
-The final report for this project is found [here](Circuit-SAT/Write Up/Circuit-SAT_Report.pdf).
+The final report for this project is found [here](https://github.com/mbillard11/Circuit-SAT/blob/master/Write%20Up/Circuit-SAT_Report.pdf).
