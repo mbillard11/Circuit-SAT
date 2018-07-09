@@ -2,8 +2,9 @@
 #
 # Author: Mitchell Billard
 #
-# Run the Generator, Reducer, and Solver. Output results as a graph
-# The n, m, and d values can be changed
+# Run the Generator, Reducer, and Solver. 
+# Output a graph by uncommenting self.plotGraph()
+# The n, m, d, and fanin values come from RunExp.py
 
 import Generator
 import Reducer
@@ -73,7 +74,7 @@ class RunGenRed:
         print('{:^10} {:^10} {:^10} {:^10} {:^10} {:^10.2}'.format(self.nStop - 1, self.numGates, self.numDepth, self.faninMax, int(self.satAvg), max(self.timeArr)))
 
         # Uncomment to show graph
-        self.plotGraph()
+        # self.plotGraph()
 
     
     def plotGraph(self):
