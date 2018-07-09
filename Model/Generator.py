@@ -44,8 +44,6 @@ class Generator:
                 self.generateLayersA(x)
             for x in range(self.gatesLeftOver + 1, self.depth):
                 self.generateLayersB(x)
-        # Generate the last layer (Remove)
-        #self.generateLastLayer()
         # Generate the final output gate
         self.circuit.append(self.randOutGate())
         # Write the generated circuit to a file

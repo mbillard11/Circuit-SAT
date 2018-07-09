@@ -74,7 +74,7 @@ class RunGenRed:
         print('{:^10} {:^10} {:^10} {:^10} {:^10} {:^10.2}'.format(self.nStop - 1, self.numGates, self.numDepth, self.faninMax, int(self.satAvg), max(self.timeArr)))
 
         # Uncomment to show graph
-        # self.plotGraph()
+        self.plotGraph()
 
     
     def plotGraph(self):

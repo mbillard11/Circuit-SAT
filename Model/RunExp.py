@@ -24,18 +24,18 @@ def main():
     print('{:10s} {:^10s} {:^10s} {:^10s} {:^10s} {:^10s}'.format('Max Inputs', 'Gates' ,'Depth',  'Fanin',  'SAT %',  'Max Time'))
 
     # Uncomment to run a single experiment. Usually used to produce a single graph
-    #experiment = RunGenRed.RunGenRed(1000, 2, 50, 5, 1001, 50)
-    #experiment.run()
+    experiment = RunGenRed.RunGenRed(1000, 100, 2, 1, 21, 1)
+    experiment.run()
 
     # Uncomment to run all experiments
-    for n in numIns:
+"""     for n in numIns:
         nStart, nStop, nInc = n[0], n[1], n[2]
         for m in numGates:
             for d in numDepth:
                 if d <= m:
                     for f in faninMax:
                         experiment = RunGenRed.RunGenRed(m, d, f, nStart, nStop, nInc)
-                        experiment.run()
+                        experiment.run() """
 
 
 
